@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BDDBF7"/>
+      <stop offset="0.55" stop-color="#EAF4FE"/>
+      <stop offset="0.55" stop-color="#7ECB86"/>
+      <stop offset="1" stop-color="#5AB96A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#fundo)"/>
+
+  <!-- Arco-íris -->
+  <g fill="none" stroke-linecap="round" stroke-width="16" opacity="0.85">
+    <path d="M 90 300 A 120 120 0 0 1 510 300" stroke="#E5459B"/>
+    <path d="M 110 300 A 100 100 0 0 1 490 300" stroke="#FFC93C"/>
+    <path d="M 130 300 A 80 80 0 0 1 470 300" stroke="#2FA7E0"/>
+  </g>
+
+  <!-- Nuvem -->
+  <g fill="#FFFFFF" stroke="#341630" stroke-width="6">
+    <ellipse cx="140" cy="150" rx="58" ry="34"/>
+    <ellipse cx="196" cy="138" rx="44" ry="28"/>
+    <ellipse cx="120" cy="132" rx="36" ry="26"/>
+  </g>
+
+  <!-- Sol -->
+  <g>
+    <circle cx="500" cy="120" r="36" fill="#FFC93C" stroke="#341630" stroke-width="6"/>
+    <g stroke="#341630" stroke-width="5" stroke-linecap="round">
+      <path d="M500 66 v-14"/><path d="M500 174 v14"/><path d="M446 120 h-14"/><path d="M554 120 h14"/>
+      <path d="M463 83 l-10 -10"/><path d="M547 157 l10 10"/><path d="M537 83 l10 -10"/><path d="M453 157 l-10 10"/>
+    </g>
+  </g>
+
+  <!-- Urso -->
+  <g stroke="#341630" stroke-width="7">
+    <!-- orelhas -->
+    <circle cx="216" cy="330" r="34" fill="#B9805A"/>
+    <circle cx="384" cy="330" r="34" fill="#B9805A"/>
+    <circle cx="216" cy="330" r="16" fill="#F6CBB0" stroke-width="5"/>
+    <circle cx="384" cy="330" r="16" fill="#F6CBB0" stroke-width="5"/>
+    <!-- cabeça -->
+    <circle cx="300" cy="400" r="110" fill="#B9805A"/>
+    <!-- fuça -->
+    <ellipse cx="300" cy="442" rx="46" ry="34" fill="#F6CBB0" stroke-width="5"/>
+    <ellipse cx="300" cy="432" rx="15" ry="11" fill="#341630" stroke="none"/>
+    <path d="M300 444 v12 q0 10 -12 10 M300 444 v12 q0 10 12 10" fill="none" stroke-width="5" stroke-linecap="round"/>
+    <!-- olhos -->
+    <circle cx="262" cy="386" r="8" fill="#341630" stroke="none"/>
+    <circle cx="338" cy="386" r="8" fill="#341630" stroke="none"/>
+    <!-- bochechas -->
+    <circle cx="240" cy="416" r="13" fill="#FF8FCA" stroke="none" opacity="0.8"/>
+    <circle cx="360" cy="416" r="13" fill="#FF8FCA" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Estrelas -->
+  <g fill="#FFC93C" stroke="#341630" stroke-width="5" stroke-linejoin="round">
+    <path d="M500 240 l14 30 32 4 -24 22 7 32 -29 -16 -29 16 7 -32 -24 -22 32 -4 z"/>
+    <path d="M120 240 l10 22 24 3 -18 16 5 24 -21 -12 -21 12 5 -24 -18 -16 24 -3 z"/>
+  </g>
+  <g fill="#E5459B" opacity="0.85">
+    <circle cx="70" cy="480" r="7"/>
+    <circle cx="540" cy="460" r="6"/>
+    <circle cx="60" cy="700" r="8"/>
+    <circle cx="548" cy="690" r="7"/>
+  </g>
+
+  <!-- Texto provisório -->
+  <rect x="90" y="560" width="420" height="90" rx="45" fill="#FFFFFF" stroke="#341630" stroke-width="7"/>
+  <text x="300" y="618" text-anchor="middle" font-family="Verdana, DejaVu Sans, sans-serif" font-size="34" font-weight="bold" fill="#E5459B">Capa provisória</text>
+  <text x="300" y="740" text-anchor="middle" font-family="Verdana, DejaVu Sans, sans-serif" font-size="22" fill="#341630" opacity="0.75">Cadastre a capa real no painel</text>
+</svg>

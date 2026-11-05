@@ -1,0 +1,22 @@
+[
+  {
+    "id": "mundo-encantado",
+    "nome": "Livro de Colorir Mundo Encantado – 25 Desenhos Fofos em PDF para Imprimir",
+    "descricao": "25 desenhos fofinhos e cheios de magia para os pequenos colorirem à vontade. Coelhinho, polvo sorridente, arco-íris e muitos amigos esperam os primeiros rabiscos. Impressão simples em A4, uma página por desenho.",
+    "curta": "25 desenhos fofos com arco-íris e amiguinhos sorridentes.",
+    "categoria": "mundo-magico",
+    "capa": "assets/capa-mundo-encantado.png",
+    "previas": [
+      "assets/capa-mundo-encantado-colorir.png"
+    ],
+    "preco": 9.9,
+    "precoPromocional": null,
+    "desenhos": 25,
+    "faixaEtaria": "3 a 7 anos",
+    "informacoesImpressao": "PDF digital para impressão em A4 retrato (21 × 29,7 cm). Recomendamos papel de 80g/m² ou mais para canetinhas. Cada desenho ocupa uma página inteira, sem marcas de dobra.",
+    "maisVendido": true,
+    "kit": false,
+    "linkKiwify": "https://pay.kiwify.com.br/o3CTS8i",
+    "publicado": true
+  }
+]

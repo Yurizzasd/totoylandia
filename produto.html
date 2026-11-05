@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livrinho — ToToyLandia</title>
+  <meta name="description" content="Livro de colorir em PDF da ToToyLandia — entrega imediata por e-mail após o pagamento seguro via Kiwify.">
+  <link rel="icon" type="image/jpeg" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ttl-bg-pontinhos" aria-hidden="true"></div>
+
+  <header id="ttl-header"></header>
+
+  <main class="ttl-produto-main">
+    <div id="ttl-produto"></div>
+
+    <!-- Prévias -->
+    <section class="ttl-previas" id="ttl-previas" hidden aria-labelledby="titulo-previas">
+      <h2 id="titulo-previas">Como são as páginas por dentro</h2>
+      <div class="ttl-previas-grade"></div>
+    </section>
+
+    <!-- Relacionados -->
+    <section class="ttl-secao" id="ttl-relacionados" hidden aria-labelledby="titulo-relacionados">
+      <div class="ttl-secao-cabecalho">
+        <h2 class="ttl-secao-titulo" id="titulo-relacionados"><span class="ttl-secao-estrelinha" aria-hidden="true">★</span> Livrinhos do mesmo mundo</h2>
+      </div>
+      <div class="ttl-grade-vitrine"></div>
+    </section>
+  </main>
+
+  <footer id="ttl-footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    TTLUI.montarHeader('catalogo');
+    TTLUI.montarFooter();
+    TTLUI.atualizarBadge();
+  </script>
+  <script src="js/produto.js"></script>
+</body>
+</html>
