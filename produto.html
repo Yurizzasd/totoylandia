@@ -4,31 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Livrinho — ToToyLandia</title>
-  <meta name="description" content="Livro de colorir em PDF da ToToyLandia — entrega imediata por e-mail após o pagamento seguro via Kiwify.">
-  <link rel="icon" type="image/jpeg" href="assets/logo.png">
+  <meta name="description" content="Livrinho de colorir em PDF da ToToyLandia — entrega imediata por e-mail após o pagamento seguro via Kiwify.">
+  <meta property="og:title" content="ToToyLandia — Livrinho de colorir em PDF">
+  <meta property="og:image" content="assets/logo.png">
+  <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="ttl-bg-pontinhos" aria-hidden="true"></div>
+  <a class="ttl-pular-conteudo" href="#ttl-conteudo">Pular para o conteúdo</a>
 
-  <header id="ttl-header"></header>
+  <header id="ttl-header" data-pagina="catalogo"></header>
 
-  <main class="ttl-produto-main">
+  <main id="ttl-conteudo" class="ttl-produto-main">
     <div id="ttl-produto"></div>
 
-    <!-- Prévias -->
+    <!-- Prévias internas (aparece só quando o cadastro tem imagens reais) -->
     <section class="ttl-previas" id="ttl-previas" hidden aria-labelledby="titulo-previas">
-      <h2 id="titulo-previas">Como são as páginas por dentro</h2>
+      <h2 id="titulo-previas">Demonstração do livrinho — páginas por dentro</h2>
       <div class="ttl-previas-grade"></div>
     </section>
 
-    <!-- Relacionados -->
+    <!-- Relacionados (mesma categoria, quando existem) -->
     <section class="ttl-secao" id="ttl-relacionados" hidden aria-labelledby="titulo-relacionados">
       <div class="ttl-secao-cabecalho">
         <h2 class="ttl-secao-titulo" id="titulo-relacionados"><span class="ttl-secao-estrelinha" aria-hidden="true">★</span> Livrinhos do mesmo mundo</h2>
+        <a class="ttl-secao-ver-tudo" href="catalogo.html">Ver todos
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
       <div class="ttl-grade-vitrine"></div>
     </section>
@@ -36,14 +41,20 @@
 
   <footer id="ttl-footer"></footer>
 
+  <!-- Lightbox para ampliar capa e páginas internas -->
+  <dialog class="ttl-lightbox" id="ttl-lightbox" aria-label="Imagem ampliada">
+    <div class="ttl-lightbox-conteudo">
+      <button class="ttl-lightbox-fechar" type="button" aria-label="Fechar imagem ampliada">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </button>
+      <img src="" alt="">
+      <p class="ttl-lightbox-legenda"></p>
+    </div>
+  </dialog>
+
   <script src="js/config.js"></script>
   <script src="js/store.js"></script>
   <script src="js/ui.js"></script>
-  <script>
-    TTLUI.montarHeader('catalogo');
-    TTLUI.montarFooter();
-    TTLUI.atualizarBadge();
-  </script>
   <script src="js/produto.js"></script>
 </body>
 </html>

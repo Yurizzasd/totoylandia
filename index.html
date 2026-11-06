@@ -3,133 +3,241 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ToToyLandia — Livros de colorir em PDF para crianças</title>
-  <meta name="description" content="Livros de colorir em PDF para crianças de 3 a 8 anos. Desenhos divertidos, entrega imediata por e-mail e impressão quantas vezes quiser.">
-  <link rel="icon" type="image/jpeg" href="assets/logo.png">
+  <title>ToToyLandia — Livrinhos de colorir em PDF para crianças</title>
+  <meta name="description" content="Livrinhos digitais em PDF para crianças de 3 a 7 anos. Desenhos fofos para imprimir quantas vezes quiser — pagamento seguro e entrega imediata por e-mail.">
+  <meta property="og:title" content="ToToyLandia — Livrinhos de colorir em PDF para crianças">
+  <meta property="og:description" content="Desenhos fofos para estimular a criatividade do seu pequeno. PDF imediato, pagamento seguro via Kiwify.">
+  <meta property="og:image" content="assets/logo.png">
+  <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="ttl-bg-pontinhos" aria-hidden="true"></div>
+  <a class="ttl-pular-conteudo" href="#ttl-conteudo">Pular para o conteúdo</a>
 
-  <header id="ttl-header"></header>
+  <header id="ttl-header" data-pagina="inicio"></header>
 
-  <main>
+  <main id="ttl-conteudo">
     <!-- ===== Hero ===== -->
     <section class="ttl-hero">
       <div class="ttl-hero-conteudo">
-        <h1>Um mundo de criatividade esperando <span class="ttl-hero-destaque">por você!</span></h1>
-        <p>Descubra livrinhos especiais para transformar cada momento em uma aventura cheia de cores.</p>
-        <div class="ttl-hero-acoes">
-          <a class="ttl-btn ttl-btn-primario" href="catalogo.html">Ver livrinhos</a>
-          <a class="ttl-btn ttl-btn-secundario" href="#mais-vendidos">O que as famílias mais levam</a>
+        <div>
+          <span class="ttl-hero-identificacao">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" style="color: var(--ttl-rosa)"><path fill="currentColor" d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 16.9 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+            ToToyLandia
+          </span>
+          <h1>Pequenos momentos, grandes aventuras <span class="ttl-hero-destaque">para colorir!</span></h1>
+          <p class="ttl-hero-subtitulo">Livrinhos digitais cheios de desenhos fofos para estimular a criatividade e transformar qualquer momento em diversão.</p>
+          <div class="ttl-hero-acoes">
+            <a class="ttl-btn ttl-btn-primario" href="catalogo.html">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 8h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 8z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="M9 10V6a3 3 0 0 1 6 0v4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>
+              Explorar livrinhos
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="ttl-btn ttl-btn-secundario" href="#mais-vendidos">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" style="color: var(--ttl-rosa)"><path fill="currentColor" d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 16.9 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+              Conhecer os mais vendidos
+            </a>
+          </div>
+          <div class="ttl-hero-confianca">
+            <span>
+              <svg class="ic-amarelo" viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              PDF disponível após a confirmação do pagamento
+            </span>
+            <span>
+              <svg class="ic-azul" viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path d="M7 8V3.5h10V8M5 8h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1.2a1 1 0 0 0-.9.8 3.2 3.2 0 0 1-6.3 0 1 1 0 0 0-.9-.8H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              Imprima quantas vezes quiser, conforme as condições de uso
+            </span>
+            <span>
+              <svg class="ic-rosa" viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path d="M12 20.3S4 15.1 4 9.6A4.4 4.4 0 0 1 8.4 5.2 4.9 4.9 0 0 1 12 7a4.9 4.9 0 0 1 3.6-1.8A4.4 4.4 0 0 1 20 9.6c0 5.5-8 10.7-8 10.7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              Livrinhos desenvolvidos para crianças
+            </span>
+          </div>
         </div>
-        <div class="ttl-hero-confianca">
-          <span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> Entrega do PDF por e-mail</span>
-          <span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> Imprima sempre que quiser</span>
-          <span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> Pagamento seguro via Kiwify</span>
+        <div class="ttl-hero-arte">
+          <img class="ttl-hero-arte-figura" src="assets/logo.png" fetchpriority="high" decoding="async"
+               alt="Personagens da ToToyLandia: crianças felizes com gizões de cera e um livrinho aberto" width="768" height="768">
+          <span class="ttl-hero-flutuante ttl-hero-flutuante-1">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" style="color: var(--ttl-azul)"><path d="M6 2h12v20H6z M6 4h12 M9 9h6 M9 12.5h6 M9 16h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            PDF instantâneo
+          </span>
+          <span class="ttl-hero-flutuante ttl-hero-flutuante-2">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" style="color: var(--ttl-rosa)"><path d="M12 21.5S5 16.6 5 11.4A4.1 4.1 0 0 1 9.1 7.3 3.9 3.9 0 0 1 12 9a3.9 3.9 0 0 1 2.9-1.7A4.1 4.1 0 0 1 19 11.4c0 5.2-7 10.1-7 10.1z" fill="currentColor"/></svg>
+            Feito com carinho
+          </span>
         </div>
-      </div>
-      <div class="ttl-hero-arte">
-        <img src="assets/logo.png" alt="Personagens da ToToyLandia: dois crianças felizes com um livro aberto e leitura divertida" width="400" fetchpriority="high">
-        <span class="ttl-hero-flutuante ttl-hero-flutuante-1">★ Novos desenhos todo mês</span>
-        <span class="ttl-hero-flutuante ttl-hero-flutuante-2">● PDF instantâneo</span>
       </div>
     </section>
 
-    <!-- ===== Tiras de valor ===== -->
+    <!-- ===== Benefícios ===== -->
     <section class="ttl-tiras" aria-label="Por que comprar na ToToyLandia">
-      <div class="ttl-tira ttl-revelar"><span aria-hidden="true">⚡</span><div><strong>Entrega imediata</strong><small>PDF no seu e-mail minutos após o pagamento</small></div></div>
-      <div class="ttl-tira ttl-revelar"><span aria-hidden="true">🖨️</span><div><strong>Imprime quantas vezes quiser</strong><small>compre uma vez, use sempre</small></div></div>
-      <div class="ttl-tira ttl-revelar"><span aria-hidden="true">🧸</span><div><strong>Feito para mãos pequenas</strong><small>linhas grossas e fofas, de 3 a 8 anos</small></div></div>
+      <div class="ttl-tira ttl-revelar">
+        <span class="ttl-tira-icone" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </span>
+        <div>
+          <strong>Entrega digital</strong>
+          <small>Receba seu PDF após a confirmação do pagamento.</small>
+        </div>
+      </div>
+      <div class="ttl-tira ttl-revelar">
+        <span class="ttl-tira-icone" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path d="M7 8V3.5h10V8M5 8h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1.2a1 1 0 0 0-.9.8 3.2 3.2 0 0 1-6.3 0 1 1 0 0 0-.9-.8H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </span>
+        <div>
+          <strong>Imprima quando quiser</strong>
+          <small>Tenha seus desenhos disponíveis para imprimir em casa.</small>
+        </div>
+      </div>
+      <div class="ttl-tira ttl-revelar">
+        <span class="ttl-tira-icone" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 20.3S4 15.1 4 9.6A4.4 4.4 0 0 1 8.4 5.2 4.9 4.9 0 0 1 12 7a4.9 4.9 0 0 1 3.6-1.8A4.4 4.4 0 0 1 20 9.6c0 5.5-8 10.7-8 10.7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </span>
+        <div>
+          <strong>Feito para pequenos artistas</strong>
+          <small>Desenhos com traços amigáveis e adequados à faixa etária indicada.</small>
+        </div>
+      </div>
     </section>
 
     <!-- ===== Mais vendidos ===== -->
     <section class="ttl-secao" id="mais-vendidos" aria-labelledby="titulo-mais-vendidos">
       <div class="ttl-secao-cabecalho">
-        <h2 class="ttl-secao-titulo" id="titulo-mais-vendidos"><span class="ttl-secao-estrelinha" aria-hidden="true">★</span> Mais vendidos</h2>
-        <a class="ttl-secao-ver-tudo" href="catalogo.html">Ver todos →</a>
+        <div>
+          <h2 class="ttl-secao-titulo" id="titulo-mais-vendidos"><span class="ttl-secao-estrelinha" aria-hidden="true">★</span> Nossos Livrinhos</h2>
+          <p class="ttl-secao-intro">Diversão, aprendizado e muita cor em um só lugar!</p>
+        </div>
+        <a class="ttl-secao-ver-tudo" href="catalogo.html">Ver todos
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
       <div class="ttl-grade-vitrine ttl-revelar" id="ttl-mais-vendidos-grade"></div>
     </section>
 
-    <!-- ===== Coleções ===== -->
+    <!-- ===== Coleções (categorias) ===== -->
     <section class="ttl-secao" id="colecoes" aria-labelledby="titulo-colecoes">
       <div class="ttl-secao-cabecalho">
-        <h2 class="ttl-secao-titulo" id="titulo-colecoes"><span class="ttl-secao-estrelinha" aria-hidden="true">★</span> Coleções temáticas</h2>
-        <a class="ttl-secao-ver-tudo" href="catalogo.html">Explorar catálogo →</a>
+        <div>
+          <h2 class="ttl-secao-titulo" id="titulo-colecoes"><span class="ttl-secao-estrelinha" aria-hidden="true">★</span> Categorias</h2>
+          <p class="ttl-secao-intro">Encontre o livrinho perfeito para seu pequeno!</p>
+        </div>
+        <a class="ttl-secao-ver-tudo" href="catalogo.html">Ver todas as categorias
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
       <div class="ttl-colecoes-grade ttl-revelar" id="ttl-colecoes-grade"></div>
     </section>
 
-    <!-- ===== Banner de novidades ===== -->
-    <section class="ttl-banner-novidades" aria-labelledby="titulo-banner">
-      <div class="ttl-banner-novidades-caixa">
+    <!-- ===== Filtros rápidos das categorias no catálogo ===== -->
+
+    <!-- ===== Como funciona ===== -->
+    <section class="ttl-como-funciona" id="como-funciona" aria-labelledby="titulo-como-funciona">
+      <div class="ttl-secao-cabecalho">
         <div>
-          <h2 id="titulo-banner">Novo na ToToyLandia 🎨</h2>
-          <p>Fique de olho: livrinhos novos chegam por aqui regularmente — e os lançamentos entram sempre com capas para pintar bônus.</p>
+          <h2 class="ttl-secao-titulo" id="titulo-como-funciona"><span class="ttl-secao-estrelinha" aria-hidden="true">★</span> Como funciona</h2>
+          <p class="ttl-secao-intro">Da escolha à folha impressa, em quatro passos simples.</p>
         </div>
-        <a class="ttl-banner-novidades-acao" href="catalogo.html">Ver o que chegou</a>
       </div>
+      <ol class="ttl-como-funciona-passos">
+        <li class="ttl-passo ttl-revelar">
+          <span class="ttl-passo-numero" aria-hidden="true"></span>
+          <strong>Escolha o livrinho</strong>
+          <p>Navegue pelas categorias e encontre o tema favorito do seu pequeno.</p>
+        </li>
+        <li class="ttl-passo ttl-revelar">
+          <span class="ttl-passo-numero" aria-hidden="true"></span>
+          <strong>Pague com segurança</strong>
+          <p>Checkout da Kiwify: Pix, cartão ou boleto, pela plataforma oficial.</p>
+        </li>
+        <li class="ttl-passo ttl-revelar">
+          <span class="ttl-passo-numero" aria-hidden="true"></span>
+          <strong>Receba o PDF</strong>
+          <p>O arquivo chega no seu e-mail logo depois da confirmação do pagamento.</p>
+        </li>
+        <li class="ttl-passo ttl-revelar">
+          <span class="ttl-passo-numero" aria-hidden="true"></span>
+          <strong>Imprima e pinte</strong>
+          <p>Papel A4 comum funciona. Pode imprimir novamente sempre que precisar.</p>
+        </li>
+      </ol>
     </section>
 
-    <!-- ===== Novidades ===== -->
-    <section class="ttl-secao" id="ttl-novidades" aria-labelledby="titulo-novidades">
-      <div class="ttl-secao-cabecalho">
-        <h2 class="ttl-secao-titulo" id="titulo-novidades"><span class="ttl-secao-estrelinha" aria-hidden="true">★</span> Chegou agora</h2>
-      </div>
-      <div class="ttl-grade-vitrine ttl-revelar" id="ttl-novidades-grade"></div>
-    </section>
-
-    <!-- ===== Kits ===== -->
-    <section class="ttl-secao" id="ttl-kits" aria-labelledby="titulo-kits">
-      <div class="ttl-secao-cabecalho">
-        <h2 class="ttl-secao-titulo" id="titulo-kits"><span class="ttl-secao-estrelinha" aria-hidden="true">★</span> Kits com desconto</h2>
-      </div>
-      <div class="ttl-grade-vitrine ttl-revelar" id="ttl-kits-grade"></div>
-    </section>
-
-    <!-- ===== Presentes ===== -->
-    <section class="ttl-secao" id="presentes" aria-labelledby="titulo-presentes">
-      <div class="ttl-secao-cabecalho">
-        <h2 class="ttl-secao-titulo" id="titulo-presentes"><span class="ttl-secao-estrelinha" aria-hidden="true">★</span> Ideias de presente</h2>
-      </div>
-      <div class="ttl-tiras">
-        <div class="ttl-tira ttl-revelar"><span aria-hidden="true">🎁</span><div><strong>Para presentear</strong><small>compre o livrinho, mande o PDF para a impressora e embrulhe junto com um giz de cera — presente rápido e feito com carinho.</small></div></div>
-        <div class="ttl-tira ttl-revelar"><span aria-hidden="true">🎈</span><div><strong>Festinha</strong><small>imprima vários desenhos do mesmo livrinho para atividades de aniversário infantil.</small></div></div>
-        <div class="ttl-tira ttl-revelar"><span aria-hidden="true">🎒</span><div><strong>Para a hora do sono</strong><small>dez minutos de cor antes da storia ajudam a desacelerar a criançada.</small></div></div>
+    <!-- ===== Compra segura ===== -->
+    <section class="ttl-banner-seguranca" aria-labelledby="titulo-seguranca">
+      <div class="ttl-banner-seguranca-caixa ttl-revelar">
+        <span class="ttl-banner-seguranca-escudo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="30" height="30"><path d="M12 2l8 3.5v5.2c0 5.1-3.4 9.1-8 11.3-4.6-2.2-8-6.2-8-11.3V5.5L12 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8.6 12l2.3 2.3 4.5-4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <div>
+          <h2 id="titulo-seguranca">Compra segura e sem complicações!</h2>
+          <p>Você paga na plataforma oficial da Kiwify, recebe o PDF no e-mail e começa a colorir no mesmo dia.</p>
+        </div>
+        <a class="ttl-btn ttl-btn-primario" href="catalogo.html">
+          Começar a colorir
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </section>
 
     <!-- ===== Sobre + FAQ ===== -->
-    <section class="ttl-secao ttl-sobre" id="sobre" aria-labelledby="titulo-sobre">
+    <section class="ttl-sobre" id="sobre" aria-labelledby="titulo-sobre">
       <div class="ttl-sobre-caixa">
-        <img src="assets/logo.png" alt="ToToyLandia" loading="lazy">
+        <img src="assets/logo.png" alt="Personagens da ToToyLandia" loading="lazy" decoding="async" width="768" height="768">
         <div>
           <h2 id="titulo-sobre">O que é a ToToyLandia?</h2>
-          <p>A ToToyLandia é uma loja de livros de colorir em PDF, feita para as famílias que querem atividades
-          do dia seguinte sem sair de casa. Você escolhe o livrinho, paga pelo checkout seguro da Kiwify,
+          <p>A ToToyLandia é uma loja de livrinhos de colorir em PDF, feita para as famílias que querem
+          atividades prontas sem sair de casa. Você escolhe o livrinho, paga pelo checkout seguro da Kiwify,
           recebe o PDF no seu e-mail e imprime quantas vezes quiser — na folha A4 da sua casa.</p>
-          <div class="ttl-sobre-faq" id="faq">
-            <details>
-              <summary>Como recebo o livrinho?</summary>
-              <p>Assim que o pagamento é confirmado pela Kiwify, o PDF é enviado automaticamente para o seu e-mail. Em minutos seu pequeno já está colorindo.</p>
-            </details>
-            <details>
-              <summary>Posso imprimir mais de uma vez?</summary>
-              <p>Pode! O PDF é seu para imprimir sempre que precisar — vale para folhas novas, aniversários ou para a turma toda.</p>
-            </details>
-            <details>
-              <summary>Que papel vocês recomendam?</summary>
-              <p>Folha sulfite A4 (comum) funciona bem. Para canetinhas, preferimos papel de 80 g/m² ou mais para o desenho não vazar.</p>
-            </details>
-            <details>
-              <summary>O pagamento é seguro?</summary>
-              <p>Sim. Toda a transação é processada na plataforma Kiwify, com Pix, cartão ou boleto. Não pedimos dados de cartão no site.</p>
-            </details>
-          </div>
+
+          <section class="ttl-faq" id="faq" aria-labelledby="titulo-faq" style="margin-top: 1.6rem;">
+            <h2 id="titulo-faq" style="font-size: 1.15rem; margin-bottom: 0.8rem;">Perguntas frequentes</h2>
+            <div class="ttl-faq-lista">
+              <details class="ttl-faq-item">
+                <summary>Como recebo meu livrinho?
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </summary>
+                <p>Assim que o pagamento é confirmado pela Kiwify, o PDF é enviado automaticamente para o seu e-mail. Em minutos o seu pequeno já está colorindo.</p>
+              </details>
+              <details class="ttl-faq-item">
+                <summary>O arquivo é físico ou digital?
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </summary>
+                <p>Digital — você recebe um arquivo PDF para imprimir em casa. Nada é enviado pelos Correios.</p>
+              </details>
+              <details class="ttl-faq-item">
+                <summary>Preciso de algum aplicativo especial?
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </summary>
+                <p>Não. Qualquer leitor de PDF abre o arquivo — computador, tablet ou celular. Para imprimir, basta mandar o arquivo para a impressora.</p>
+              </details>
+              <details class="ttl-faq-item">
+                <summary>Posso imprimir os desenhos?
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </summary>
+                <p>Pode! O PDF é seu para imprimir sempre que precisar — folhas novas, aniversários ou para a turma toda, conforme as condições de uso do produto.</p>
+              </details>
+              <details class="ttl-faq-item">
+                <summary>Em qual formato recebo o arquivo?
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </summary>
+                <p>No formato PDF, pronto para impressão em A4. As informações de impressão de cada livrinho ficam na página do produto.</p>
+              </details>
+              <details class="ttl-faq-item">
+                <summary>Como funciona o pagamento?
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </summary>
+                <p>Toda a transação é processada pela plataforma Kiwify, com Pix, cartão ou boleto. Não pedimos dados de cartão no site.</p>
+              </details>
+              <details class="ttl-faq-item">
+                <summary>Como consigo ajuda se tiver algum problema?
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </summary>
+                <p>Cada pedido tem um e-mail de confirmação da Kiwify com os canais de suporte da loja. Consulte esse e-mail para falar com a gente sobre entrega do PDF ou problemas de impressão.</p>
+              </details>
+            </div>
+          </section>
         </div>
       </div>
     </section>
@@ -137,14 +245,18 @@
 
   <footer id="ttl-footer"></footer>
 
+  <noscript>
+    <p style="max-width: 720px; margin: 1rem auto; padding: 1rem; background: #fff; border-radius: 12px; text-align: center;">
+      Para ver o catálogo de livrinhos, ative o JavaScript no navegador.
+    </p>
+  </noscript>
+
   <script src="js/config.js"></script>
   <script src="js/store.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/home.js"></script>
   <script>
-    TTLUI.montarHeader('inicio');
-    TTLUI.montarFooter();
-    TTLUI.atualizarBadge();
+    TTLUI.montarGaveta();
     TTLUI.observarRevelacao();
   </script>
 </body>

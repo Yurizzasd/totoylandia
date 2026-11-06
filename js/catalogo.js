@@ -8,6 +8,7 @@
   const elementos = {
     grade: document.getElementById('ttl-catalogo-grade'),
     busca: document.getElementById('ttl-busca'),
+    buscaLimpar: document.getElementById('ttl-busca-limpar'),
     ordenacao: document.getElementById('ttl-ordenacao'),
     chips: document.getElementById('ttl-chips-categorias'),
     contador: document.getElementById('ttl-contador-resultados'),
@@ -23,10 +24,7 @@
   let ordem = parametros.get('ordem')?.trim() ?? 'relevancia';
 
   elementos.busca.value = termoBusca;
-  if (categoriaAtiva) {
-    const cap = document.querySelector(`.ttl-chip[data-categoria="${categoriaAtiva}"]`);
-    if (cap) cap.classList.add('ativa');
-  }
+  elementos.buscaLimpar.classList.toggle('visivel', Boolean(termoBusca));
   elementos.ordenacao.value = ordem;
 
   /* ---------- Chips de categoria ---------- */
@@ -35,26 +33,45 @@
   ).join('');
   elementos.chips.innerHTML =
     `<button class="ttl-chip ativa" data-categoria="">Todos os livrinhos</button>${chipsHTML}`;
+  if (categoriaAtiva) {
+    const chipAtivo = elementos.chips.querySelector(`.ttl-chip[data-categoria="${categoriaAtiva}"]`);
+    if (chipAtivo) {
+      elementos.chips.querySelectorAll('.ttl-chip').forEach(c => c.classList.remove('ativa'));
+      chipAtivo.classList.add('ativa');
+    }
+  }
 
   elementos.chips.addEventListener('click', (evento) => {
     const chip = evento.target.closest('.ttl-chip');
     if (!chip) return;
-    evento.target.closest('.ttl-chips').querySelectorAll('.ttl-chip').forEach(c => c.classList.remove('ativa'));
+    elementos.chips.querySelectorAll('.ttl-chip').forEach(c => c.classList.remove('ativa'));
     chip.classList.add('ativa');
     categoriaAtiva = chip.dataset.categoria;
     indice = 0;
     renderizar(false);
   });
 
-  /* ---------- Pesquisa ---------- */
+  /* ---------- Pesquisa com digitação amortecida ---------- */
   let temporizadorBusca = null;
   elementos.busca.addEventListener('input', () => {
+    const vazio = elementos.busca.value.trim().length === 0;
+    elementos.buscaLimpar.classList.toggle('visivel', !vazio);
     clearTimeout(temporizadorBusca);
     temporizadorBusca = setTimeout(() => {
       termoBusca = elementos.busca.value.trim();
       indice = 0;
       renderizar(false);
     }, 240);
+  });
+
+  /* Botão para limpar a pesquisa */
+  elementos.buscaLimpar.addEventListener('click', () => {
+    elementos.busca.value = '';
+    elementos.buscaLimpar.classList.remove('visivel');
+    termoBusca = '';
+    indice = 0;
+    elementos.busca.focus();
+    renderizar(false);
   });
 
   /* ---------- Ordenação ---------- */
@@ -64,9 +81,13 @@
     renderizar(false);
   });
 
-  /* ---------- Popularidade ---------- */
+  /* ---------- Popularidade (usa apenas o selo real de mais vendido) ---------- */
   function temDadosReais(produto) {
     return Boolean(produto.maisVendido);
+  }
+
+  function preco(produto) {
+    return produto.precoPromocional != null ? Number(produto.precoPromocional) : Number(produto.preco);
   }
 
   function ordenar(lista) {
@@ -75,10 +96,6 @@
     else if (ordem === 'preco-desc') copia.sort((a, b) => preco(b) - preco(a));
     else if (ordem === 'populares') copia.sort((a, b) => Number(temDadosReais(b)) - Number(temDadosReais(a)));
     return copia;
-  }
-
-  function preco(produto) {
-    return produto.precoPromocional != null ? Number(produto.precoPromocional) : Number(produto.preco);
   }
 
   function filtrar() {

@@ -5,9 +5,9 @@
     "descricao": "25 desenhos fofinhos e cheios de magia para os pequenos colorirem à vontade. Coelhinho, polvo sorridente, arco-íris e muitos amigos esperam os primeiros rabiscos. Impressão simples em A4, uma página por desenho.",
     "curta": "25 desenhos fofos com arco-íris e amiguinhos sorridentes.",
     "categoria": "mundo-magico",
-    "capa": "assets/capa-mundo-encantado.png",
+    "capa": "assets/capa-mundo-encantado.webp",
     "previas": [
-      "assets/capa-mundo-encantado-colorir.png"
+      "assets/capa-mundo-encantado-colorir.webp"
     ],
     "preco": 9.9,
     "precoPromocional": null,
