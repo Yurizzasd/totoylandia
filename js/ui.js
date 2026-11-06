@@ -12,8 +12,7 @@ const TTLUI = {
       <p class="ttl-avisobar">Livrinhos incríveis para estimular a criatividade do seu pequeno!</p>
       <div class="ttl-header-inner">
         <a class="ttl-logo" href="index.html" aria-label="ToToyLandia — início">
-          <img src="assets/logo.png" alt="ToToyLandia" width="48" height="48">
-          <span class="ttl-logo-texto">ToToy<em>Landia</em></span>
+          <img src="assets/logo-horizontal.webp" alt="ToToyLandia" width="104" height="48" decoding="async">
         </a>
         <nav class="ttl-nav" id="ttl-nav-principal" aria-label="Navegação principal">
           <a href="index.html" class="${pagina === 'inicio' ? 'ativa' : ''}" ${pagina === 'inicio' ? 'aria-current="page"' : ''}>Início</a>
@@ -98,8 +97,7 @@ const TTLUI = {
       <div class="ttl-footer-inner">
         <div class="ttl-footer-marca">
           <a class="ttl-logo" href="index.html" aria-label="ToToyLandia — início">
-            <img src="assets/logo.png" alt="ToToyLandia" width="52" height="52" loading="lazy">
-            <span class="ttl-logo-texto">ToToy<em>Landia</em></span>
+            <img src="assets/logo-horizontal.webp" alt="ToToyLandia" width="112" height="52" loading="lazy" decoding="async">
           </a>
           <p class="ttl-footer-slogan">Colorir é aprender brincando: livrinhos em PDF para as famílias imprimirem em casa.</p>
           <p class="ttl-footer-sticker">Diversão, criatividade e aprendizado em um só lugar!</p>
@@ -378,22 +376,30 @@ const TTLUI = {
     return window.confirm(mensagem);
   },
 
-  /** Observa elementos .ttl-revelar e aplica a animação de entrada. */
+  /** Observa elementos .ttl-revelar e aplica a animação de entrada.
+   *  Fallback: se o navegador nunca devolver callbacks de interseção
+   *  (aba oculta, captura de página inteira, extensões), tudo é revelado
+   *  em 2,5s — conteúdo nunca pode ficar invisible para o usuário. */
   observarRevelacao() {
     const alvos = document.querySelectorAll('.ttl-revelar:not(.revelado)');
+    if (alvos.length === 0) return;
+    const revelarTudo = () => alvos.forEach(el => el.classList.add('revelado'));
     if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      alvos.forEach(el => el.classList.add('revelado'));
+      revelarTudo();
       return;
     }
+    let confirmado = false;
     const observador = new IntersectionObserver((entradas) => {
       entradas.forEach(entrada => {
         if (entrada.isIntersecting) {
+          if (!confirmado) { confirmado = true; clearTimeout(seguranca); }
           entrada.target.classList.add('revelado');
           observador.unobserve(entrada.target);
         }
       });
     }, { threshold: 0.12 });
     alvos.forEach(el => observador.observe(el));
+    const seguranca = setTimeout(revelarTudo, 2500);
   },
 
   escapo: ttlEscapar,

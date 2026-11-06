@@ -12,7 +12,7 @@
     document.title = 'Produto não encontrado — ToToyLandia';
     document.querySelector('main').innerHTML = `
       <section class="ttl-estado-vazio">
-        <img src="assets/logo.png" alt="" width="90" loading="lazy">
+        <img src="assets/logo-simbolo.webp" alt="" width="90" height="62" loading="lazy">
         <h2>Livrinho não encontrado</h2>
         <p>Este link pode estar quebrado ou o livrinho foi despublicado.</p>
         <a class="ttl-btn ttl-btn-primario" href="catalogo.html">Voltar ao catálogo</a>

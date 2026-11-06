@@ -204,16 +204,17 @@ section[id], [id] { scroll-margin-top: 90px; }
   text-decoration: none;
   flex-shrink: 0;
 }
-.ttl-logo img { border-radius: 14px; }
-.ttl-logo-texto {
-  font-family: var(--ttl-fonte-display);
-  font-weight: 800;
-  font-size: 1.32rem;
-  color: var(--ttl-rosa-escuro);
-  letter-spacing: -0.02em;
-  line-height: 1;
+/* Logos rasterizadas: altura fixa, largura acompanha o ratio — nunca esticar,
+   nunca cortar (object-fit contain). */
+.ttl-logo img {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
 }
-.ttl-logo-texto em { font-style: normal; color: var(--ttl-azul-escuro); }
+@media (max-width: 560px) {
+  .ttl-logo img { height: 40px; }
+}
+.ttl-footer-marca .ttl-logo img { height: 52px; }
 
 .ttl-nav {
   display: flex;
@@ -451,13 +452,13 @@ section[id], [id] { scroll-margin-top: 90px; }
   display: grid;
   place-items: center;
   padding: 0.5rem;
-  min-height: 320px;
+  min-height: 260px;
 }
 
-/* Ilustração original da marca em destaque */
+/* Logo horizontal da marca em destaque na vitrine */
 .ttl-hero-arte-figura {
-  width: min(88%, 380px);
-  border-radius: 30px;
+  width: min(90%, 440px);
+  border-radius: 22px;
   box-shadow: var(--ttl-sombra-forte), 0 0 0 8px var(--ttl-branco);
   transform: rotate(-1.5deg);
   position: relative;
@@ -495,7 +496,7 @@ section[id], [id] { scroll-margin-top: 90px; }
   .ttl-hero-conteudo > * { margin-inline: auto; }
   .ttl-hero-confianca { justify-content: center; }
   .ttl-hero-arte { order: -1; min-height: 0; }
-  .ttl-hero-arte-figura { width: min(74%, 300px); }
+  .ttl-hero-arte-figura { width: min(84%, 360px); }
   .ttl-hero-flutuante-1 { top: 4%; left: 2%; }
   .ttl-hero-flutuante-2 { bottom: 2%; right: 2%; }
 }
@@ -621,6 +622,13 @@ section[id], [id] { scroll-margin-top: 90px; }
   flex-wrap: wrap;
 }
 .ttl-secao-titulo { font-size: clamp(1.45rem, 3vw, 1.9rem); font-weight: 800; }
+.ttl-secao-estrelinha {
+  display: inline-block;
+  vertical-align: -0.06em;
+  margin-right: 0.35rem;
+  color: var(--ttl-rosa);
+}
+.ttl-secao-estrelinha svg { width: 0.82em; height: 0.82em; }
 .ttl-secao-intro {
   color: var(--ttl-ink-suave);
   font-size: 0.95rem;
@@ -686,11 +694,14 @@ section[id], [id] { scroll-margin-top: 90px; }
   width: 60px;
   height: 60px;
   margin: 0 auto 0.7rem;
-  font-size: 1.75rem;
-  line-height: 1;
+  color: color-mix(in srgb, var(--colecao-cor) 62%, var(--ttl-ink));
   border-radius: 18px;
   background: color-mix(in srgb, var(--colecao-cor) 20%, var(--ttl-branco));
   position: relative;
+}
+.ttl-colecao-icone svg {
+  width: 30px;
+  height: 30px;
 }
 .ttl-colecao-nome {
   font-family: var(--ttl-fonte-display);
@@ -1420,11 +1431,8 @@ dialog.ttl-lightbox::backdrop {
   align-items: center;
 }
 .ttl-sobre-caixa img {
-  width: min(100%, 300px);
+  width: min(100%, 340px);
   margin-inline: auto;
-  border-radius: var(--ttl-raio-grande);
-  border: 6px solid var(--ttl-branco);
-  box-shadow: var(--ttl-sombra-forte);
 }
 .ttl-sobre-caixa h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); margin-bottom: 0.7rem; }
 .ttl-sobre-caixa > div > p { color: var(--ttl-ink-suave); max-width: 36rem; }
@@ -1473,7 +1481,6 @@ dialog.ttl-lightbox::backdrop {
 }
 .ttl-footer-marca { display: grid; gap: 0.75rem; align-content: start; justify-items: start; }
 .ttl-footer-marca .ttl-logo { gap: 0.55rem; }
-.ttl-footer-marca .ttl-logo-texto { color: var(--ttl-rosa-escuro); font-size: 1.25rem; }
 .ttl-footer-slogan { font-size: 0.9rem; color: var(--ttl-ink-suave); max-width: 20rem; line-height: 1.55; }
 .ttl-footer-sticker {
   font-family: var(--ttl-fonte-display);
