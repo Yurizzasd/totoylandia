@@ -161,7 +161,7 @@
                </a>`
             : `<button class="ttl-btn ttl-btn-primario ttl-produto-comprar" id="ttl-btn-comprar" disabled>Checkout em preparação</button>`}
           <button class="ttl-btn ttl-btn-secundario ttl-produto-adicionar" id="ttl-btn-adicionar-carrinho" type="button">
-            ${TTLIcones.icone('carrinho', 22)}
+            ${TTLIcones.icone('carrinho', 26)}
             Adicionar ao carrinho
           </button>
         </div>

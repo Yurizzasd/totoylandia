@@ -23,10 +23,10 @@ const TTLUI = {
         </nav>
         <div class="ttl-header-acoes">
           <button class="ttl-icon-btn" id="ttl-btn-pesquisa" aria-label="Pesquisar" aria-expanded="false" aria-controls="ttl-search-barra" title="Pesquisar livrinhos">
-            ${TTLIcones.icone('busca', 22)}
+            ${TTLIcones.icone('busca', 24)}
           </button>
           <button class="ttl-icon-btn" id="ttl-btn-carrinho" aria-label="Abrir carrinho" title="Carrinho">
-            ${TTLIcones.icone('carrinho', 24)}
+            ${TTLIcones.icone('carrinho', 26)}
             <span class="ttl-badge ${(qtd > 0) ? 'visivel' : ''}" id="ttl-badge-carrinho">${qtd}</span>
           </button>
           <button class="ttl-menu-btn" id="ttl-btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="ttl-nav-principal">
@@ -36,7 +36,7 @@ const TTLUI = {
       </div>
       <div class="ttl-search-barra" id="ttl-search-barra" hidden>
         <form id="ttl-search-form" role="search">
-          ${TTLIcones.icone('busca', 22)}
+          ${TTLIcones.icone('busca', 24)}
           <input type="search" id="ttl-search-input" placeholder="O que o seu pequeno quer colorir hoje?" aria-label="Pesquisar livrinhos" autocomplete="off">
           <button type="submit" class="ttl-btn-mini">Buscar</button>
         </form>
