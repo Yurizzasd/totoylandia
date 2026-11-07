@@ -197,6 +197,18 @@ section[id], [id] { scroll-margin-top: 90px; }
   min-height: 68px;
 }
 
+/* ---- Sistema de ícones (js/icons.js) ---- */
+/* .ttl-ico é o wrapper neutro: alinhar sem afetar o tamanho do SVG,
+   que cada chamada define explicitamente (nitidez estável). */
+.ttl-ico {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  flex-shrink: 0;
+}
+.ttl-ico svg { display: block; }
+
 .ttl-logo {
   display: flex;
   align-items: center;
@@ -435,13 +447,10 @@ section[id], [id] { scroll-margin-top: 90px; }
   max-width: 12.5rem;
   line-height: 1.35;
 }
-.ttl-hero-confianca svg {
-  flex-shrink: 0;
+.ttl-hero-confianca .ttl-ico {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  padding: 8px;
-  box-sizing: border-box;
 }
 .ttl-hero-confianca .ic-amarelo { color: #B47D00; background: var(--ttl-amarelo-suave); }
 .ttl-hero-confianca .ic-azul { color: var(--ttl-azul-escuro); background: var(--ttl-azul-claro); }
@@ -533,12 +542,9 @@ section[id], [id] { scroll-margin-top: 90px; }
   border-radius: 13px;
   display: grid;
   place-items: center;
-  color: var(--ttl-roxo);
-  background: rgba(123, 91, 230, 0.11);
 }
-.ttl-tira:nth-child(2) .ttl-tira-icone { color: var(--ttl-azul-escuro); background: rgba(47, 167, 224, 0.11); }
-.ttl-tira:nth-child(3) .ttl-tira-icone { color: #B9770900; background: transparent; }
-.ttl-tira:nth-child(3) .ttl-tira-icone { color: var(--ttl-rosa-escuro); background: var(--ttl-rosa-fundo); }
+.ttl-tira:nth-child(2) .ttl-tira-icone { background: rgba(47, 167, 224, 0.11); }
+.ttl-tira:nth-child(3) .ttl-tira-icone { background: var(--ttl-rosa-fundo); }
 .ttl-tira strong {
   font-family: var(--ttl-fonte-display);
   display: block;
@@ -623,12 +629,10 @@ section[id], [id] { scroll-margin-top: 90px; }
 }
 .ttl-secao-titulo { font-size: clamp(1.45rem, 3vw, 1.9rem); font-weight: 800; }
 .ttl-secao-estrelinha {
-  display: inline-block;
-  vertical-align: -0.06em;
-  margin-right: 0.35rem;
-  color: var(--ttl-rosa);
+  display: inline-flex;
+  vertical-align: -0.18em;
+  margin-right: 0.4rem;
 }
-.ttl-secao-estrelinha svg { width: 0.82em; height: 0.82em; }
 .ttl-secao-intro {
   color: var(--ttl-ink-suave);
   font-size: 0.95rem;
@@ -998,10 +1002,12 @@ section[id], [id] { scroll-margin-top: 90px; }
   padding: 3.6rem 1rem;
   color: var(--ttl-ink-suave);
 }
+.ttl-sem-resultados .ttl-ico, .ttl-estado-vazio .ttl-ico {
+  display: flex;
+  margin: 0 auto 1.2rem;
+}
 .ttl-sem-resultados img, .ttl-estado-vazio img {
   margin: 0 auto 1rem;
-  border-radius: 20px;
-  opacity: 0.9;
 }
 .ttl-sem-resultados h3, .ttl-estado-vazio h2 { font-size: 1.4rem; margin-bottom: 0.4rem; }
 .ttl-estado-vazio .ttl-btn { margin-top: 1.2rem; }
@@ -1216,14 +1222,12 @@ section[id], [id] { scroll-margin-top: 90px; }
   gap: 0.75rem;
   align-items: flex-start;
 }
-.ttl-receber-caixa svg {
-  flex-shrink: 0;
+.ttl-receber-caixa .ttl-ico {
+  width: 24px;
+  height: 24px;
   color: var(--ttl-verde);
   background: rgba(76, 201, 138, 0.14);
   border-radius: 50%;
-  padding: 4px;
-  width: 24px;
-  height: 24px;
   margin-top: 0.15rem;
 }
 .ttl-receber-caixa li strong { font-family: var(--ttl-fonte-display); font-size: 0.97rem; display: block; }
@@ -1336,12 +1340,11 @@ dialog.ttl-lightbox::backdrop {
   border-radius: 12px;
   display: grid;
   place-items: center;
-  color: var(--ttl-azul-escuro);
   background: rgba(47, 167, 224, 0.1);
 }
-.ttl-beneficio:nth-child(2) .ttl-beneficio-icone { color: var(--ttl-rosa-escuro); background: var(--ttl-rosa-fundo); }
-.ttl-beneficio:nth-child(3) .ttl-beneficio-icone { color: var(--ttl-roxo); background: rgba(123, 91, 230, 0.1); }
-.ttl-beneficio:nth-child(4) .ttl-beneficio-icone { color: #1D7A4C; background: rgba(76, 201, 138, 0.13); }
+.ttl-beneficio:nth-child(2) .ttl-beneficio-icone { background: var(--ttl-rosa-fundo); }
+.ttl-beneficio:nth-child(3) .ttl-beneficio-icone { background: rgba(123, 91, 230, 0.1); }
+.ttl-beneficio:nth-child(4) .ttl-beneficio-icone { background: rgba(76, 201, 138, 0.13); }
 
 /* ============ FAQ (acordeão) ============ */
 

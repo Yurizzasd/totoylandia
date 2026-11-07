@@ -41,7 +41,6 @@
     </button>`).join('');
 
   /* ---------- O que você vai receber (dados reais do cadastro) ---------- */
-  const iconeCheck = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   const itensReceber = [];
   itensReceber.push({
     titulo: `1 arquivo PDF com ${Number(produto.desenhos) || 'várias'} páginas de desenhos`,
@@ -69,22 +68,22 @@
     {
       titulo: 'Entrega imediata',
       texto: 'O PDF chega no seu e-mail minutos após a confirmação do pagamento (via Kiwify).',
-      icone: '<svg viewBox="0 0 24 24" width="22" height="22"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>'
+      icone: TTLIcones.icone('raio', 24)
     },
     {
       titulo: 'Imprima quantas vezes quiser',
       texto: 'Perfeito para imprimir de novo quando a folha sai colorida "do jeito errado".',
-      icone: '<svg viewBox="0 0 24 24" width="22" height="22"><path d="M7 8V3.5h10V8M5 8h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1.2a1 1 0 0 0-.9.8 3.2 3.2 0 0 1-6.3 0 1 1 0 0 0-.9-.8H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>'
+      icone: TTLIcones.icone('impressora', 24)
     },
     {
       titulo: 'Feito para mãos pequenas',
       texto: 'Desenhos com linhas grossas e amigáveis, dentro da faixa etária indicada.',
-      icone: '<svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 19l-5.2-5.7a4.2 4.2 0 0 1 6-5.9l-.8.8-.8-.8a4.2 4.2 0 0 1 6 5.9L12 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 19v-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+      icone: TTLIcones.icone('coracao', 24)
     },
     {
       titulo: 'Guardado para sempre',
       texto: 'O PDF fica salvo no seu e-mail: imprima em folha nova em qualquer dia.',
-      icone: '<svg viewBox="0 0 24 24" width="22" height="22"><path d="M7 4h10a1 1 0 0 1 1 1v13H6V5a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 20h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 8h6M9 11h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+      icone: TTLIcones.icone('download', 24)
     }
   ];
 
@@ -107,7 +106,7 @@
           ${temPromo ? `<span class="ttl-selo-promo">-${descontado}%</span>` : ''}
           ${produto.maisVendido ? '<span class="ttl-selo-topvenda">Mais vendido</span>' : ''}
           <span class="ttl-produto-capa-ajuda" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="12" height="12"><path d="M4 9V4h6M20 15v5h-6M4 4l6 6M20 20l-6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            ${TTLIcones.icone('ampliar', 12)}
             Ampliar
           </span>
         </div>
@@ -158,11 +157,11 @@
             ? `<a class="ttl-btn ttl-btn-primario ttl-produto-comprar" id="ttl-btn-comprar"
                  href="${TTLUI.escapo(produto.linkKiwify)}" target="_blank" rel="noopener noreferrer">
                  Comprar agora
-                 <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                 ${TTLIcones.icone('setaDireita', 17)}
                </a>`
             : `<button class="ttl-btn ttl-btn-primario ttl-produto-comprar" id="ttl-btn-comprar" disabled>Checkout em preparação</button>`}
           <button class="ttl-btn ttl-btn-secundario ttl-produto-adicionar" id="ttl-btn-adicionar-carrinho" type="button">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 4h2.4l2.5 11.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L21.5 8H6.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10.5" cy="20.3" r="1.7" fill="currentColor"/><circle cx="17.5" cy="20.3" r="1.7" fill="currentColor"/></svg>
+            ${TTLIcones.icone('carrinho', 18)}
             Adicionar ao carrinho
           </button>
         </div>
@@ -176,12 +175,12 @@
     </section>
 
     <section class="ttl-produto-secao" aria-labelledby="titulo-receber">
-      <h2 id="titulo-receber">O que você vai receber</h2>
+      <h2 id="titulo-receber"><span class="ttl-ico" aria-hidden="true">${TTLIcones.icone('presente', 22)}</span> O que você vai receber</h2>
       <div class="ttl-receber-caixa">
         <ul class="ttl-receber-lista">
           ${itensReceber.map(item => `
             <li>
-              ${iconeCheck}
+              <span class="ttl-ico" style="color: var(--ttl-verde);">${TTLIcones.icone('check', 14)}</span>
               <div>
                 <strong>${TTLUI.escapo(item.titulo)}</strong>
                 <p>${TTLUI.escapo(item.texto)}</p>
@@ -193,17 +192,17 @@
 
     <section class="ttl-produto-secao" aria-labelledby="titulo-sobre-produto">
       <div class="ttl-produto-descricao-caixa">
-        <h2 id="titulo-sobre-produto">Sobre este livrinho</h2>
+        <h2 id="titulo-sobre-produto"><span class="ttl-ico" aria-hidden="true">${TTLIcones.icone('livroAberto', 22)}</span> Sobre este livrinho</h2>
         ${String(produto.descricao || '').split(/\n\n+/).filter(Boolean).map(parte =>
           `<p>${TTLUI.escapo(parte)}</p>`).join('')}
         ${produto.informacoesImpressao ? `
-        <h3 style="font-size: 1.1rem; margin-top: 1.2rem; color: var(--ttl-azul-escuro);">Informações de impressão</h3>
+        <h3 style="font-size: 1.1rem; margin-top: 1.2rem; color: var(--ttl-azul-escuro); display:flex; align-items:center; gap: 0.45rem;">${TTLIcones.icone('impressora', 20)} Informações de impressão</h3>
         <p>${TTLUI.escapo(produto.informacoesImpressao)}</p>` : ''}
       </div>
     </section>
 
     <section class="ttl-produto-secao" aria-labelledby="titulo-vantagens">
-      <h2 id="titulo-vantagens">Vantagens de levar um livrinho para casa</h2>
+      <h2 id="titulo-vantagens"><span class="ttl-ico" aria-hidden="true">${TTLIcones.icone('paleta', 22)}</span> Vantagens de levar um livrinho para casa</h2>
       <div class="ttl-beneficios-grade">
         ${beneficios.map(b => `
           <div class="ttl-beneficio">

@@ -27,11 +27,11 @@
     <section class="ttl-catalogo-controles" aria-label="Filtros do catálogo">
       <div class="ttl-busca-area">
         <form role="search" onsubmit="return false;">
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M21 21l-4.3-4.3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <span class="ttl-ico" data-ico="busca" data-ico-tamanho="18" aria-hidden="true"></span>
           <label class="sr-unica" for="ttl-busca">Pesquisar livrinhos</label>
           <input type="search" id="ttl-busca" placeholder="Pesquisar: dinossauro, fofinho, arco-íris…" autocomplete="off">
           <button type="button" class="ttl-busca-limpar" id="ttl-busca-limpar" aria-label="Limpar pesquisa">
-            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+            <span class="ttl-ico" data-ico="fechar" data-ico-tamanho="14" aria-hidden="true"></span>
           </button>
         </form>
         <div class="ttl-ordenacao">
@@ -58,7 +58,7 @@
       <div class="ttl-catalogo-grade" id="ttl-catalogo-grade"></div>
 
       <div class="ttl-sem-resultados" id="ttl-sem-resultados" hidden>
-        <img src="assets/logo-simbolo.webp" alt="" width="120" height="82" loading="lazy">
+        <span class="ttl-ico" data-ico="lupaCartoon" data-ico-tamanho="72" aria-hidden="true"></span>
         <h3>Ops, nada por aqui</h3>
         <p>Nenhum livrinho encontrado com esses filtros. Tente outra palavra ou limpe a pesquisa.</p>
         <p style="margin-top: 1rem;">
@@ -82,6 +82,7 @@
 
   <script src="js/config.js"></script>
   <script src="js/store.js"></script>
+  <script src="js/icons.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/catalogo.js"></script>
 </body>

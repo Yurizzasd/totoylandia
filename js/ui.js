@@ -23,20 +23,20 @@ const TTLUI = {
         </nav>
         <div class="ttl-header-acoes">
           <button class="ttl-icon-btn" id="ttl-btn-pesquisa" aria-label="Pesquisar" aria-expanded="false" aria-controls="ttl-search-barra" title="Pesquisar livrinhos">
-            <svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M21 21l-4.3-4.3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            ${TTLIcones.icone('busca', 21)}
           </button>
           <button class="ttl-icon-btn" id="ttl-btn-carrinho" aria-label="Abrir carrinho" title="Carrinho">
-            <svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><path d="M3 4h2.4l2.5 11.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L21.5 8H6.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10.5" cy="20.3" r="1.7" fill="currentColor"/><circle cx="17.5" cy="20.3" r="1.7" fill="currentColor"/></svg>
+            ${TTLIcones.icone('carrinho', 21)}
             <span class="ttl-badge ${(qtd > 0) ? 'visivel' : ''}" id="ttl-badge-carrinho">${qtd}</span>
           </button>
           <button class="ttl-menu-btn" id="ttl-btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="ttl-nav-principal">
-            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+            ${TTLIcones.icone('menu', 24)}
           </button>
         </div>
       </div>
       <div class="ttl-search-barra" id="ttl-search-barra" hidden>
         <form id="ttl-search-form" role="search">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M21 21l-4.3-4.3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          ${TTLIcones.icone('busca', 20)}
           <input type="search" id="ttl-search-input" placeholder="O que o seu pequeno quer colorir hoje?" aria-label="Pesquisar livrinhos" autocomplete="off">
           <button type="submit" class="ttl-btn-mini">Buscar</button>
         </form>
@@ -129,7 +129,7 @@ const TTLUI = {
         <div class="ttl-footer-base-conteudo">
           <p>© <span id="ttl-ano"></span> ToToyLandia. Todos os direitos reservados.</p>
           <span class="ttl-footer-nota-entrega">
-            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 10.5V7a3.5 3.5 0 0 1 7 0v3.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            ${TTLIcones.icone('cadeado', 15)}
             Livrinhos digitais · Pagamento seguro · Entrega imediata
           </span>
         </div>
@@ -165,7 +165,7 @@ const TTLUI = {
       lista.innerHTML = `
         <div class="ttl-carrinho-vazio">
           <div class="ttl-carrinho-vazio-icone" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="30" height="30"><path d="M3 4h2.4l2.5 11.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L21.5 8H6.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10.5" cy="20.3" r="1.7" fill="currentColor"/><circle cx="17.5" cy="20.3" r="1.7" fill="currentColor"/></svg>
+            ${TTLIcones.icone('carrinhoCheio', 30)}
           </div>
           <p>Seu carrinho está vazio.</p>
           <a class="ttl-btn ttl-btn-primario" href="catalogo.html">Ver livrinhos</a>
@@ -188,7 +188,7 @@ const TTLUI = {
           ${temLink ? '' : '<p class="ttl-aviso-em-breve">Checkout em preparação</p>'}
         </div>
         <button class="ttl-carrinho-remover" aria-label="Remover ${TTLUI.escapo(p.nome)} do carrinho" title="Remover">
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          ${TTLIcones.icone('fechar', 18)}
         </button>
       </div>`;
     }).join('');
@@ -255,11 +255,11 @@ const TTLUI = {
     gaveta.innerHTML = `
       <div class="ttl-carrinho-cabecalho">
         <h3>
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 4h2.4l2.5 11.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L21.5 8H6.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10.5" cy="20.3" r="1.7" fill="currentColor"/><circle cx="17.5" cy="20.3" r="1.7" fill="currentColor"/></svg>
+          ${TTLIcones.icone('carrinhoCheio', 20)}
           Meu carrinho
         </h3>
         <button class="ttl-carrinho-fechar" aria-label="Fechar carrinho">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          ${TTLIcones.icone('fechar', 20)}
         </button>
       </div>
       <div class="ttl-carrinho-lista"></div>
@@ -269,7 +269,7 @@ const TTLUI = {
           <strong class="ttl-carrinho-total"></strong>
         </div>
         <p class="ttl-carrinho-entrega">
-          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          ${TTLIcones.icone('check', 16)}
           <span>PDF entregue por e-mail logo após o pagamento, via Kiwify. Vocês podem imprimir em casa quantas vezes quiserem.</span>
         </p>
         <div class="ttl-carrinho-botoes">
@@ -315,8 +315,8 @@ const TTLUI = {
     ].join('');
     const categoria = `<span class="ttl-card-categoria">${TTLUI.escapo(TTLProdutos.categoriaNome(produto.categoria))}</span>`;
 
-    const iconeDesenhos = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path d="M6 2h9l5 5v15H6z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15 2v5h5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 13h6M9 16.5h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
-    const iconeIdade = '<svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><circle cx="12" cy="7" r="3.4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+    const iconeDesenhos = TTLIcones.icone('desenhos', 13);
+    const iconeIdade = TTLIcones.icone('idade', 13);
 
     return `
       <article class="ttl-card ${pequeno ? 'ttl-card-pequeno' : ''}" data-id="${TTLUI.escapo(produto.id)}">
@@ -341,7 +341,7 @@ const TTLUI = {
           </div>
           <a class="ttl-btn ttl-btn-primario ttl-card-botao" href="produto.html?id=${encodeURIComponent(produto.id)}">
             Ver produto
-            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            ${TTLIcones.icone('setaDireita', 15)}
           </a>
         </div>
       </article>
