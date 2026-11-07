@@ -29,7 +29,7 @@
       const qtd = contagemPorCategoria[cat.id] || 0;
       return `
         <a class="ttl-colecao ttl-revelar" href="catalogo.html?categoria=${cat.id}" style="--colecao-cor: ${enfeite.cor}">
-          <span class="ttl-colecao-icone" aria-hidden="true">${TTLIcones.icone(enfeite.icone, 30)}</span>
+          <span class="ttl-colecao-icone" aria-hidden="true">${TTLIcones.icone(enfeite.icone, 48)}</span>
           <span class="ttl-colecao-nome">${TTLUI.escapo(cat.nome)}</span>
           <span class="ttl-colecao-qtd">${qtd === 0 ? 'em breve' : `${qtd} livrinho${qtd > 1 ? 's' : ''}`}</span>
         </a>`;

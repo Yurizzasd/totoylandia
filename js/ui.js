@@ -23,10 +23,10 @@ const TTLUI = {
         </nav>
         <div class="ttl-header-acoes">
           <button class="ttl-icon-btn" id="ttl-btn-pesquisa" aria-label="Pesquisar" aria-expanded="false" aria-controls="ttl-search-barra" title="Pesquisar livrinhos">
-            ${TTLIcones.icone('busca', 21)}
+            ${TTLIcones.icone('busca', 22)}
           </button>
           <button class="ttl-icon-btn" id="ttl-btn-carrinho" aria-label="Abrir carrinho" title="Carrinho">
-            ${TTLIcones.icone('carrinho', 21)}
+            ${TTLIcones.icone('carrinho', 24)}
             <span class="ttl-badge ${(qtd > 0) ? 'visivel' : ''}" id="ttl-badge-carrinho">${qtd}</span>
           </button>
           <button class="ttl-menu-btn" id="ttl-btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="ttl-nav-principal">
@@ -36,7 +36,7 @@ const TTLUI = {
       </div>
       <div class="ttl-search-barra" id="ttl-search-barra" hidden>
         <form id="ttl-search-form" role="search">
-          ${TTLIcones.icone('busca', 20)}
+          ${TTLIcones.icone('busca', 22)}
           <input type="search" id="ttl-search-input" placeholder="O que o seu pequeno quer colorir hoje?" aria-label="Pesquisar livrinhos" autocomplete="off">
           <button type="submit" class="ttl-btn-mini">Buscar</button>
         </form>
@@ -165,7 +165,7 @@ const TTLUI = {
       lista.innerHTML = `
         <div class="ttl-carrinho-vazio">
           <div class="ttl-carrinho-vazio-icone" aria-hidden="true">
-            ${TTLIcones.icone('carrinhoCheio', 30)}
+            ${TTLIcones.icone('carrinhoCheio', 48)}
           </div>
           <p>Seu carrinho está vazio.</p>
           <a class="ttl-btn ttl-btn-primario" href="catalogo.html">Ver livrinhos</a>
@@ -188,7 +188,7 @@ const TTLUI = {
           ${temLink ? '' : '<p class="ttl-aviso-em-breve">Checkout em preparação</p>'}
         </div>
         <button class="ttl-carrinho-remover" aria-label="Remover ${TTLUI.escapo(p.nome)} do carrinho" title="Remover">
-          ${TTLIcones.icone('fechar', 18)}
+          ${TTLIcones.icone('fechar', 20)}
         </button>
       </div>`;
     }).join('');
@@ -255,11 +255,11 @@ const TTLUI = {
     gaveta.innerHTML = `
       <div class="ttl-carrinho-cabecalho">
         <h3>
-          ${TTLIcones.icone('carrinhoCheio', 20)}
+          ${TTLIcones.icone('carrinhoCheio', 26)}
           Meu carrinho
         </h3>
         <button class="ttl-carrinho-fechar" aria-label="Fechar carrinho">
-          ${TTLIcones.icone('fechar', 20)}
+          ${TTLIcones.icone('fechar', 26)}
         </button>
       </div>
       <div class="ttl-carrinho-lista"></div>
@@ -269,7 +269,7 @@ const TTLUI = {
           <strong class="ttl-carrinho-total"></strong>
         </div>
         <p class="ttl-carrinho-entrega">
-          ${TTLIcones.icone('check', 16)}
+          ${TTLIcones.icone('check', 22)}
           <span>PDF entregue por e-mail logo após o pagamento, via Kiwify. Vocês podem imprimir em casa quantas vezes quiserem.</span>
         </p>
         <div class="ttl-carrinho-botoes">

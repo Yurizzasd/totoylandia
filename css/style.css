@@ -208,6 +208,12 @@ section[id], [id] { scroll-margin-top: 90px; }
   flex-shrink: 0;
 }
 .ttl-ico svg { display: block; }
+/* Ícones oficiais PNG (biblioteca da marca): transparência preservada,
+   proporção exata via width/height do arquivo — nunca esticar. */
+.ttl-ico img, img.ttl-ico-img {
+  display: block;
+  object-fit: contain;
+}
 
 .ttl-logo {
   display: flex;
@@ -464,9 +470,10 @@ section[id], [id] { scroll-margin-top: 90px; }
   min-height: 260px;
 }
 
-/* Logo horizontal da marca em destaque na vitrine */
+/* Capa real do produto (arte oficial da vitrine) em destaque no hero */
 .ttl-hero-arte-figura {
-  width: min(90%, 440px);
+  width: min(72%, 320px);
+  height: auto;
   border-radius: 22px;
   box-shadow: var(--ttl-sombra-forte), 0 0 0 8px var(--ttl-branco);
   transform: rotate(-1.5deg);
@@ -489,7 +496,7 @@ section[id], [id] { scroll-margin-top: 90px; }
   z-index: 4;
   white-space: nowrap;
 }
-.ttl-hero-flutuante svg { flex-shrink: 0; }
+.ttl-hero-flutuante svg, .ttl-hero-flutuante img, .ttl-hero-flutuante .ttl-ico { flex-shrink: 0; }
 .ttl-hero-flutuante-1 { top: 6%; left: -2%; color: var(--ttl-rosa-escuro); animation: ttl-flutuar 5s ease-in-out infinite; }
 .ttl-hero-flutuante-2 { bottom: 8%; right: -2%; color: var(--ttl-azul-escuro); animation: ttl-flutuar 5.8s ease-in-out 0.8s infinite; }
 @keyframes ttl-flutuar {
@@ -505,7 +512,7 @@ section[id], [id] { scroll-margin-top: 90px; }
   .ttl-hero-conteudo > * { margin-inline: auto; }
   .ttl-hero-confianca { justify-content: center; }
   .ttl-hero-arte { order: -1; min-height: 0; }
-  .ttl-hero-arte-figura { width: min(84%, 360px); }
+  .ttl-hero-arte-figura { width: min(80%, 300px); }
   .ttl-hero-flutuante-1 { top: 4%; left: 2%; }
   .ttl-hero-flutuante-2 { bottom: 2%; right: 2%; }
 }
@@ -542,9 +549,10 @@ section[id], [id] { scroll-margin-top: 90px; }
   border-radius: 13px;
   display: grid;
   place-items: center;
+  background: var(--ttl-branco);
 }
-.ttl-tira:nth-child(2) .ttl-tira-icone { background: rgba(47, 167, 224, 0.11); }
-.ttl-tira:nth-child(3) .ttl-tira-icone { background: var(--ttl-rosa-fundo); }
+.ttl-tira:nth-child(2) .ttl-tira-icone,
+.ttl-tira:nth-child(3) .ttl-tira-icone { background: var(--ttl-branco); }
 .ttl-tira strong {
   font-family: var(--ttl-fonte-display);
   display: block;
@@ -695,17 +703,18 @@ section[id], [id] { scroll-margin-top: 90px; }
 .ttl-colecao-icone {
   display: grid;
   place-items: center;
-  width: 60px;
-  height: 60px;
+  width: 76px;
+  height: 76px;
   margin: 0 auto 0.7rem;
-  color: color-mix(in srgb, var(--colecao-cor) 62%, var(--ttl-ink));
   border-radius: 18px;
-  background: color-mix(in srgb, var(--colecao-cor) 20%, var(--ttl-branco));
+  background: var(--ttl-branco);
+  border: 1.5px solid var(--ttl-borda);
+  box-shadow: var(--ttl-sombra);
   position: relative;
 }
+.ttl-colecao-icone img,
 .ttl-colecao-icone svg {
-  width: 30px;
-  height: 30px;
+  display: block;
 }
 .ttl-colecao-nome {
   font-family: var(--ttl-fonte-display);
@@ -1223,10 +1232,9 @@ section[id], [id] { scroll-margin-top: 90px; }
   align-items: flex-start;
 }
 .ttl-receber-caixa .ttl-ico {
-  width: 24px;
-  height: 24px;
-  color: var(--ttl-verde);
-  background: rgba(76, 201, 138, 0.14);
+  width: 28px;
+  height: 28px;
+  background: transparent;
   border-radius: 50%;
   margin-top: 0.15rem;
 }
@@ -1301,9 +1309,8 @@ dialog.ttl-lightbox::backdrop {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: none;
-  background: var(--ttl-ink);
-  color: var(--ttl-branco);
+  border: 2px solid var(--ttl-borda);
+  background: var(--ttl-branco);
   display: grid;
   place-items: center;
   box-shadow: var(--ttl-sombra-forte);
@@ -1340,11 +1347,11 @@ dialog.ttl-lightbox::backdrop {
   border-radius: 12px;
   display: grid;
   place-items: center;
-  background: rgba(47, 167, 224, 0.1);
+  background: var(--ttl-branco);
 }
-.ttl-beneficio:nth-child(2) .ttl-beneficio-icone { background: var(--ttl-rosa-fundo); }
-.ttl-beneficio:nth-child(3) .ttl-beneficio-icone { background: rgba(123, 91, 230, 0.1); }
-.ttl-beneficio:nth-child(4) .ttl-beneficio-icone { background: rgba(76, 201, 138, 0.13); }
+.ttl-beneficio:nth-child(2) .ttl-beneficio-icone,
+.ttl-beneficio:nth-child(3) .ttl-beneficio-icone,
+.ttl-beneficio:nth-child(4) .ttl-beneficio-icone { background: var(--ttl-branco); }
 
 /* ============ FAQ (acordeão) ============ */
 
@@ -1403,11 +1410,9 @@ dialog.ttl-lightbox::backdrop {
 }
 .ttl-banner-seguranca-escudo {
   flex-shrink: 0;
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
-  background: var(--ttl-azul-claro);
-  color: var(--ttl-azul-escuro);
   display: grid;
   place-items: center;
 }
@@ -1655,11 +1660,10 @@ body:has(.ttl-gaveta-carrinho.aberta) .ttl-gaveta-fundo { opacity: 1; pointer-ev
   justify-items: center;
 }
 .ttl-carrinho-vazio-icone {
-  width: 68px;
-  height: 68px;
+  width: 84px;
+  height: 84px;
   border-radius: 50%;
-  background: var(--ttl-rosa-fundo);
-  color: var(--ttl-rosa-escuro);
+  background: var(--ttl-creme);
   display: grid;
   place-items: center;
 }
@@ -1684,7 +1688,7 @@ body:has(.ttl-gaveta-carrinho.aberta) .ttl-gaveta-fundo { opacity: 1; pointer-ev
   color: var(--ttl-ink);
 }
 .ttl-carrinho-entrega { font-size: 0.78rem; color: var(--ttl-ink-suave); display: flex; gap: 0.4rem; align-items: flex-start; }
-.ttl-carrinho-entrega svg { flex-shrink: 0; color: var(--ttl-verde); margin-top: 0.1rem; }
+.ttl-carrinho-entrega svg, .ttl-carrinho-entrega img { flex-shrink: 0; margin-top: 0.1rem; }
 .ttl-carrinho-botoes { display: grid; gap: 0.55rem; margin-top: 0.2rem; }
 
 /* ============ Toasts ============ */

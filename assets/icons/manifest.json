@@ -1,0 +1,698 @@
+[
+  {
+    "file": "assets/icons/categorias/livrinhos-de-colorir.png",
+    "name": "livrinhos-de-colorir",
+    "folder": "categorias",
+    "width": 247,
+    "height": 185,
+    "source": "Biblioteca original — linha 1, coluna 1"
+  },
+  {
+    "file": "assets/icons/categorias/festas-e-decoracao.png",
+    "name": "festas-e-decoracao",
+    "folder": "categorias",
+    "width": 164,
+    "height": 190,
+    "source": "Biblioteca original — linha 1, coluna 2"
+  },
+  {
+    "file": "assets/icons/categorias/materiais-educativos.png",
+    "name": "materiais-educativos",
+    "folder": "categorias",
+    "width": 195,
+    "height": 163,
+    "source": "Biblioteca original — linha 1, coluna 3"
+  },
+  {
+    "file": "assets/icons/categorias/lembrancinhas.png",
+    "name": "lembrancinhas",
+    "folder": "categorias",
+    "width": 178,
+    "height": 180,
+    "source": "Biblioteca original — linha 1, coluna 4"
+  },
+  {
+    "file": "assets/icons/categorias/papelaria-personalizada.png",
+    "name": "papelaria-personalizada",
+    "folder": "categorias",
+    "width": 197,
+    "height": 174,
+    "source": "Biblioteca original — linha 1, coluna 5"
+  },
+  {
+    "file": "assets/icons/categorias/colecoes-tematicas.png",
+    "name": "colecoes-tematicas",
+    "folder": "categorias",
+    "width": 213,
+    "height": 198,
+    "source": "Biblioteca original — linha 1, coluna 6"
+  },
+  {
+    "file": "assets/icons/categorias/destaque.png",
+    "name": "destaque",
+    "folder": "categorias",
+    "width": 154,
+    "height": 161,
+    "source": "Biblioteca original — linha 1, coluna 7"
+  },
+  {
+    "file": "assets/icons/interface/pesquisar-alternativo.png",
+    "name": "pesquisar-alternativo",
+    "folder": "interface",
+    "width": 131,
+    "height": 139,
+    "source": "Biblioteca original — linha 2, coluna 1"
+  },
+  {
+    "file": "assets/icons/interface/carrinho-alternativo.png",
+    "name": "carrinho-alternativo",
+    "folder": "interface",
+    "width": 165,
+    "height": 135,
+    "source": "Biblioteca original — linha 2, coluna 2"
+  },
+  {
+    "file": "assets/icons/interface/favoritos-alternativo.png",
+    "name": "favoritos-alternativo",
+    "folder": "interface",
+    "width": 143,
+    "height": 128,
+    "source": "Biblioteca original — linha 2, coluna 3"
+  },
+  {
+    "file": "assets/icons/interface/inicio-alternativo.png",
+    "name": "inicio-alternativo",
+    "folder": "interface",
+    "width": 148,
+    "height": 134,
+    "source": "Biblioteca original — linha 2, coluna 4"
+  },
+  {
+    "file": "assets/icons/interface/categorias-alternativo.png",
+    "name": "categorias-alternativo",
+    "folder": "interface",
+    "width": 122,
+    "height": 132,
+    "source": "Biblioteca original — linha 2, coluna 5"
+  },
+  {
+    "file": "assets/icons/interface/ofertas.png",
+    "name": "ofertas",
+    "folder": "interface",
+    "width": 147,
+    "height": 138,
+    "source": "Biblioteca original — linha 2, coluna 6"
+  },
+  {
+    "file": "assets/icons/interface/minha-conta-alternativo.png",
+    "name": "minha-conta-alternativo",
+    "folder": "interface",
+    "width": 124,
+    "height": 138,
+    "source": "Biblioteca original — linha 2, coluna 7"
+  },
+  {
+    "file": "assets/icons/interface/sair-alternativo.png",
+    "name": "sair-alternativo",
+    "folder": "interface",
+    "width": 140,
+    "height": 136,
+    "source": "Biblioteca original — linha 2, coluna 8"
+  },
+  {
+    "file": "assets/icons/beneficios/compra-segura.png",
+    "name": "compra-segura",
+    "folder": "beneficios",
+    "width": 135,
+    "height": 136,
+    "source": "Biblioteca original — linha 3, coluna 1"
+  },
+  {
+    "file": "assets/icons/beneficios/entrega-rapida.png",
+    "name": "entrega-rapida",
+    "folder": "beneficios",
+    "width": 115,
+    "height": 132,
+    "source": "Biblioteca original — linha 3, coluna 2"
+  },
+  {
+    "file": "assets/icons/beneficios/imprimir-alternativo.png",
+    "name": "imprimir-alternativo",
+    "folder": "beneficios",
+    "width": 141,
+    "height": 132,
+    "source": "Biblioteca original — linha 3, coluna 3"
+  },
+  {
+    "file": "assets/icons/beneficios/pagamento-seguro.png",
+    "name": "pagamento-seguro",
+    "folder": "beneficios",
+    "width": 148,
+    "height": 129,
+    "source": "Biblioteca original — linha 3, coluna 4"
+  },
+  {
+    "file": "assets/icons/beneficios/suporte-alternativo.png",
+    "name": "suporte-alternativo",
+    "folder": "beneficios",
+    "width": 148,
+    "height": 135,
+    "source": "Biblioteca original — linha 3, coluna 5"
+  },
+  {
+    "file": "assets/icons/beneficios/qualidade-garantida.png",
+    "name": "qualidade-garantida",
+    "folder": "beneficios",
+    "width": 129,
+    "height": 135,
+    "source": "Biblioteca original — linha 3, coluna 6"
+  },
+  {
+    "file": "assets/icons/beneficios/descontos-alternativo.png",
+    "name": "descontos-alternativo",
+    "folder": "beneficios",
+    "width": 141,
+    "height": 138,
+    "source": "Biblioteca original — linha 3, coluna 7"
+  },
+  {
+    "file": "assets/icons/beneficios/novidades-alternativo.png",
+    "name": "novidades-alternativo",
+    "folder": "beneficios",
+    "width": 138,
+    "height": 138,
+    "source": "Biblioteca original — linha 3, coluna 8"
+  },
+  {
+    "file": "assets/icons/temas/presentes-alternativo.png",
+    "name": "presentes-alternativo",
+    "folder": "temas",
+    "width": 144,
+    "height": 137,
+    "source": "Biblioteca original — linha 4, coluna 1"
+  },
+  {
+    "file": "assets/icons/temas/aniversario.png",
+    "name": "aniversario",
+    "folder": "temas",
+    "width": 159,
+    "height": 143,
+    "source": "Biblioteca original — linha 4, coluna 2"
+  },
+  {
+    "file": "assets/icons/temas/decoracao.png",
+    "name": "decoracao",
+    "folder": "temas",
+    "width": 138,
+    "height": 135,
+    "source": "Biblioteca original — linha 4, coluna 3"
+  },
+  {
+    "file": "assets/icons/temas/diversao.png",
+    "name": "diversao",
+    "folder": "temas",
+    "width": 149,
+    "height": 132,
+    "source": "Biblioteca original — linha 4, coluna 4"
+  },
+  {
+    "file": "assets/icons/temas/dinossauros-alternativo.png",
+    "name": "dinossauros-alternativo",
+    "folder": "temas",
+    "width": 140,
+    "height": 135,
+    "source": "Biblioteca original — linha 4, coluna 5"
+  },
+  {
+    "file": "assets/icons/temas/infantil.png",
+    "name": "infantil",
+    "folder": "temas",
+    "width": 210,
+    "height": 130,
+    "source": "Biblioteca original — linha 4, coluna 6"
+  },
+  {
+    "file": "assets/icons/temas/aprender.png",
+    "name": "aprender",
+    "folder": "temas",
+    "width": 153,
+    "height": 133,
+    "source": "Biblioteca original — linha 4, coluna 7"
+  },
+  {
+    "file": "assets/icons/temas/explorar.png",
+    "name": "explorar",
+    "folder": "temas",
+    "width": 150,
+    "height": 144,
+    "source": "Biblioteca original — linha 4, coluna 8"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/instagram.png",
+    "name": "instagram",
+    "folder": "redes-e-contato",
+    "width": 128,
+    "height": 113,
+    "source": "Biblioteca original — linha 5, coluna 1"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/youtube.png",
+    "name": "youtube",
+    "folder": "redes-e-contato",
+    "width": 133,
+    "height": 110,
+    "source": "Biblioteca original — linha 5, coluna 2"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/whatsapp-alternativo.png",
+    "name": "whatsapp-alternativo",
+    "folder": "redes-e-contato",
+    "width": 129,
+    "height": 118,
+    "source": "Biblioteca original — linha 5, coluna 3"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/telegram.png",
+    "name": "telegram",
+    "folder": "redes-e-contato",
+    "width": 124,
+    "height": 118,
+    "source": "Biblioteca original — linha 5, coluna 4"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/email-alternativo.png",
+    "name": "email-alternativo",
+    "folder": "redes-e-contato",
+    "width": 134,
+    "height": 109,
+    "source": "Biblioteca original — linha 5, coluna 5"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/informacoes-alternativo.png",
+    "name": "informacoes-alternativo",
+    "folder": "redes-e-contato",
+    "width": 132,
+    "height": 118,
+    "source": "Biblioteca original — linha 5, coluna 6"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/ajuda-alternativo.png",
+    "name": "ajuda-alternativo",
+    "folder": "redes-e-contato",
+    "width": 123,
+    "height": 117,
+    "source": "Biblioteca original — linha 5, coluna 7"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/aviso.png",
+    "name": "aviso",
+    "folder": "redes-e-contato",
+    "width": 131,
+    "height": 117,
+    "source": "Biblioteca original — linha 5, coluna 8"
+  },
+  {
+    "file": "assets/icons/interface/inicio.png",
+    "name": "inicio",
+    "folder": "interface",
+    "width": 146,
+    "height": 136,
+    "source": "Biblioteca complementar — linha 1, coluna 1"
+  },
+  {
+    "file": "assets/icons/interface/categorias.png",
+    "name": "categorias",
+    "folder": "interface",
+    "width": 128,
+    "height": 126,
+    "source": "Biblioteca complementar — linha 1, coluna 2"
+  },
+  {
+    "file": "assets/icons/interface/pesquisar.png",
+    "name": "pesquisar",
+    "folder": "interface",
+    "width": 139,
+    "height": 136,
+    "source": "Biblioteca complementar — linha 1, coluna 3"
+  },
+  {
+    "file": "assets/icons/interface/carrinho-com-contador-zero.png",
+    "name": "carrinho-com-contador-zero",
+    "folder": "interface",
+    "width": 151,
+    "height": 146,
+    "source": "Biblioteca complementar — linha 1, coluna 4"
+  },
+  {
+    "file": "assets/icons/interface/favoritos.png",
+    "name": "favoritos",
+    "folder": "interface",
+    "width": 137,
+    "height": 125,
+    "source": "Biblioteca complementar — linha 1, coluna 5"
+  },
+  {
+    "file": "assets/icons/interface/destaque-estrela.png",
+    "name": "destaque-estrela",
+    "folder": "interface",
+    "width": 134,
+    "height": 136,
+    "source": "Biblioteca complementar — linha 1, coluna 6"
+  },
+  {
+    "file": "assets/icons/interface/presentes.png",
+    "name": "presentes",
+    "folder": "interface",
+    "width": 145,
+    "height": 138,
+    "source": "Biblioteca complementar — linha 1, coluna 7"
+  },
+  {
+    "file": "assets/icons/interface/seguranca.png",
+    "name": "seguranca",
+    "folder": "interface",
+    "width": 127,
+    "height": 136,
+    "source": "Biblioteca complementar — linha 1, coluna 8"
+  },
+  {
+    "file": "assets/icons/interface/entrega-rapida-alternativo.png",
+    "name": "entrega-rapida-alternativo",
+    "folder": "interface",
+    "width": 100,
+    "height": 121,
+    "source": "Biblioteca complementar — linha 2, coluna 1"
+  },
+  {
+    "file": "assets/icons/interface/imprimir.png",
+    "name": "imprimir",
+    "folder": "interface",
+    "width": 130,
+    "height": 122,
+    "source": "Biblioteca complementar — linha 2, coluna 2"
+  },
+  {
+    "file": "assets/icons/interface/download.png",
+    "name": "download",
+    "folder": "interface",
+    "width": 129,
+    "height": 121,
+    "source": "Biblioteca complementar — linha 2, coluna 3"
+  },
+  {
+    "file": "assets/icons/interface/cartao-de-pagamento.png",
+    "name": "cartao-de-pagamento",
+    "folder": "interface",
+    "width": 139,
+    "height": 112,
+    "source": "Biblioteca complementar — linha 2, coluna 4"
+  },
+  {
+    "file": "assets/icons/interface/suporte-headset.png",
+    "name": "suporte-headset",
+    "folder": "interface",
+    "width": 152,
+    "height": 126,
+    "source": "Biblioteca complementar — linha 2, coluna 5"
+  },
+  {
+    "file": "assets/icons/interface/informacoes.png",
+    "name": "informacoes",
+    "folder": "interface",
+    "width": 135,
+    "height": 126,
+    "source": "Biblioteca complementar — linha 2, coluna 6"
+  },
+  {
+    "file": "assets/icons/interface/ajuda.png",
+    "name": "ajuda",
+    "folder": "interface",
+    "width": 143,
+    "height": 126,
+    "source": "Biblioteca complementar — linha 2, coluna 7"
+  },
+  {
+    "file": "assets/icons/interface/fechar.png",
+    "name": "fechar",
+    "folder": "interface",
+    "width": 121,
+    "height": 120,
+    "source": "Biblioteca complementar — linha 2, coluna 8"
+  },
+  {
+    "file": "assets/icons/interface/voltar.png",
+    "name": "voltar",
+    "folder": "interface",
+    "width": 123,
+    "height": 114,
+    "source": "Biblioteca complementar — linha 3, coluna 1"
+  },
+  {
+    "file": "assets/icons/interface/avancar.png",
+    "name": "avancar",
+    "folder": "interface",
+    "width": 124,
+    "height": 114,
+    "source": "Biblioteca complementar — linha 3, coluna 2"
+  },
+  {
+    "file": "assets/icons/interface/voltar-ao-topo.png",
+    "name": "voltar-ao-topo",
+    "folder": "interface",
+    "width": 118,
+    "height": 89,
+    "source": "Biblioteca complementar — linha 3, coluna 3"
+  },
+  {
+    "file": "assets/icons/interface/filtrar.png",
+    "name": "filtrar",
+    "folder": "interface",
+    "width": 116,
+    "height": 119,
+    "source": "Biblioteca complementar — linha 3, coluna 4"
+  },
+  {
+    "file": "assets/icons/interface/ordenar.png",
+    "name": "ordenar",
+    "folder": "interface",
+    "width": 126,
+    "height": 113,
+    "source": "Biblioteca complementar — linha 3, coluna 5"
+  },
+  {
+    "file": "assets/icons/interface/etiqueta-promocao.png",
+    "name": "etiqueta-promocao",
+    "folder": "interface",
+    "width": 124,
+    "height": 118,
+    "source": "Biblioteca complementar — linha 3, coluna 6"
+  },
+  {
+    "file": "assets/icons/interface/desconto-percentual.png",
+    "name": "desconto-percentual",
+    "folder": "interface",
+    "width": 125,
+    "height": 121,
+    "source": "Biblioteca complementar — linha 3, coluna 7"
+  },
+  {
+    "file": "assets/icons/interface/mais-vendidos.png",
+    "name": "mais-vendidos",
+    "folder": "interface",
+    "width": 112,
+    "height": 121,
+    "source": "Biblioteca complementar — linha 3, coluna 8"
+  },
+  {
+    "file": "assets/icons/temas/livro-aberto.png",
+    "name": "livro-aberto",
+    "folder": "temas",
+    "width": 155,
+    "height": 124,
+    "source": "Biblioteca complementar — linha 4, coluna 1"
+  },
+  {
+    "file": "assets/icons/temas/chapeu-de-festa.png",
+    "name": "chapeu-de-festa",
+    "folder": "temas",
+    "width": 114,
+    "height": 133,
+    "source": "Biblioteca complementar — linha 4, coluna 2"
+  },
+  {
+    "file": "assets/icons/temas/atividades-pintura.png",
+    "name": "atividades-pintura",
+    "folder": "temas",
+    "width": 149,
+    "height": 131,
+    "source": "Biblioteca complementar — linha 4, coluna 3"
+  },
+  {
+    "file": "assets/icons/temas/educacao-capelo.png",
+    "name": "educacao-capelo",
+    "folder": "temas",
+    "width": 147,
+    "height": 122,
+    "source": "Biblioteca complementar — linha 4, coluna 4"
+  },
+  {
+    "file": "assets/icons/temas/animais-pata.png",
+    "name": "animais-pata",
+    "folder": "temas",
+    "width": 140,
+    "height": 127,
+    "source": "Biblioteca complementar — linha 4, coluna 5"
+  },
+  {
+    "file": "assets/icons/temas/dinossauro-cabeca.png",
+    "name": "dinossauro-cabeca",
+    "folder": "temas",
+    "width": 157,
+    "height": 128,
+    "source": "Biblioteca complementar — linha 4, coluna 6"
+  },
+  {
+    "file": "assets/icons/temas/novidades-foguete.png",
+    "name": "novidades-foguete",
+    "folder": "temas",
+    "width": 137,
+    "height": 130,
+    "source": "Biblioteca complementar — linha 4, coluna 7"
+  },
+  {
+    "file": "assets/icons/temas/lancamentos-brilhos.png",
+    "name": "lancamentos-brilhos",
+    "folder": "temas",
+    "width": 112,
+    "height": 109,
+    "source": "Biblioteca complementar — linha 4, coluna 8"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/minha-conta.png",
+    "name": "minha-conta",
+    "folder": "redes-e-contato",
+    "width": 120,
+    "height": 120,
+    "source": "Biblioteca complementar — linha 5, coluna 1"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/sair.png",
+    "name": "sair",
+    "folder": "redes-e-contato",
+    "width": 130,
+    "height": 117,
+    "source": "Biblioteca complementar — linha 5, coluna 2"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/contato-email.png",
+    "name": "contato-email",
+    "folder": "redes-e-contato",
+    "width": 132,
+    "height": 109,
+    "source": "Biblioteca complementar — linha 5, coluna 3"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/whatsapp.png",
+    "name": "whatsapp",
+    "folder": "redes-e-contato",
+    "width": 122,
+    "height": 120,
+    "source": "Biblioteca complementar — linha 5, coluna 4"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/endereco.png",
+    "name": "endereco",
+    "folder": "redes-e-contato",
+    "width": 104,
+    "height": 124,
+    "source": "Biblioteca complementar — linha 5, coluna 5"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/calendario.png",
+    "name": "calendario",
+    "folder": "redes-e-contato",
+    "width": 129,
+    "height": 122,
+    "source": "Biblioteca complementar — linha 5, coluna 6"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/concluido.png",
+    "name": "concluido",
+    "folder": "redes-e-contato",
+    "width": 126,
+    "height": 120,
+    "source": "Biblioteca complementar — linha 5, coluna 7"
+  },
+  {
+    "file": "assets/icons/redes-e-contato/atencao.png",
+    "name": "atencao",
+    "folder": "redes-e-contato",
+    "width": 125,
+    "height": 120,
+    "source": "Biblioteca complementar — linha 5, coluna 8"
+  },
+  {
+    "file": "assets/icons/utilitarios/avaliacoes.png",
+    "name": "avaliacoes",
+    "folder": "utilitarios",
+    "width": 120,
+    "height": 122,
+    "source": "Biblioteca complementar — linha 6, coluna 1"
+  },
+  {
+    "file": "assets/icons/utilitarios/depoimentos.png",
+    "name": "depoimentos",
+    "folder": "utilitarios",
+    "width": 142,
+    "height": 119,
+    "source": "Biblioteca complementar — linha 6, coluna 2"
+  },
+  {
+    "file": "assets/icons/utilitarios/parceria.png",
+    "name": "parceria",
+    "folder": "utilitarios",
+    "width": 155,
+    "height": 116,
+    "source": "Biblioteca complementar — linha 6, coluna 3"
+  },
+  {
+    "file": "assets/icons/utilitarios/lista-de-desejos.png",
+    "name": "lista-de-desejos",
+    "folder": "utilitarios",
+    "width": 125,
+    "height": 125,
+    "source": "Biblioteca complementar — linha 6, coluna 4"
+  },
+  {
+    "file": "assets/icons/utilitarios/excluir.png",
+    "name": "excluir",
+    "folder": "utilitarios",
+    "width": 109,
+    "height": 122,
+    "source": "Biblioteca complementar — linha 6, coluna 5"
+  },
+  {
+    "file": "assets/icons/utilitarios/editar.png",
+    "name": "editar",
+    "folder": "utilitarios",
+    "width": 118,
+    "height": 124,
+    "source": "Biblioteca complementar — linha 6, coluna 6"
+  },
+  {
+    "file": "assets/icons/utilitarios/copiar.png",
+    "name": "copiar",
+    "folder": "utilitarios",
+    "width": 125,
+    "height": 121,
+    "source": "Biblioteca complementar — linha 6, coluna 7"
+  },
+  {
+    "file": "assets/icons/utilitarios/pdf.png",
+    "name": "pdf",
+    "folder": "utilitarios",
+    "width": 110,
+    "height": 121,
+    "source": "Biblioteca complementar — linha 6, coluna 8"
+  }
+]

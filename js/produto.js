@@ -68,22 +68,22 @@
     {
       titulo: 'Entrega imediata',
       texto: 'O PDF chega no seu e-mail minutos após a confirmação do pagamento (via Kiwify).',
-      icone: TTLIcones.icone('raio', 24)
+      icone: TTLIcones.icone('raio', 36)
     },
     {
       titulo: 'Imprima quantas vezes quiser',
       texto: 'Perfeito para imprimir de novo quando a folha sai colorida "do jeito errado".',
-      icone: TTLIcones.icone('impressora', 24)
+      icone: TTLIcones.icone('impressora', 36)
     },
     {
       titulo: 'Feito para mãos pequenas',
       texto: 'Desenhos com linhas grossas e amigáveis, dentro da faixa etária indicada.',
-      icone: TTLIcones.icone('coracao', 24)
+      icone: TTLIcones.icone('coracao', 36)
     },
     {
       titulo: 'Guardado para sempre',
       texto: 'O PDF fica salvo no seu e-mail: imprima em folha nova em qualquer dia.',
-      icone: TTLIcones.icone('download', 24)
+      icone: TTLIcones.icone('download', 36)
     }
   ];
 
@@ -161,7 +161,7 @@
                </a>`
             : `<button class="ttl-btn ttl-btn-primario ttl-produto-comprar" id="ttl-btn-comprar" disabled>Checkout em preparação</button>`}
           <button class="ttl-btn ttl-btn-secundario ttl-produto-adicionar" id="ttl-btn-adicionar-carrinho" type="button">
-            ${TTLIcones.icone('carrinho', 18)}
+            ${TTLIcones.icone('carrinho', 22)}
             Adicionar ao carrinho
           </button>
         </div>
@@ -175,12 +175,12 @@
     </section>
 
     <section class="ttl-produto-secao" aria-labelledby="titulo-receber">
-      <h2 id="titulo-receber"><span class="ttl-ico" aria-hidden="true">${TTLIcones.icone('presente', 22)}</span> O que você vai receber</h2>
+      <h2 id="titulo-receber"><span class="ttl-ico" aria-hidden="true">${TTLIcones.icone('presente', 30)}</span> O que você vai receber</h2>
       <div class="ttl-receber-caixa">
         <ul class="ttl-receber-lista">
           ${itensReceber.map(item => `
             <li>
-              <span class="ttl-ico" style="color: var(--ttl-verde);">${TTLIcones.icone('check', 14)}</span>
+              <span class="ttl-ico">${TTLIcones.icone('check', 20)}</span>
               <div>
                 <strong>${TTLUI.escapo(item.titulo)}</strong>
                 <p>${TTLUI.escapo(item.texto)}</p>
@@ -192,17 +192,17 @@
 
     <section class="ttl-produto-secao" aria-labelledby="titulo-sobre-produto">
       <div class="ttl-produto-descricao-caixa">
-        <h2 id="titulo-sobre-produto"><span class="ttl-ico" aria-hidden="true">${TTLIcones.icone('livroAberto', 22)}</span> Sobre este livrinho</h2>
+        <h2 id="titulo-sobre-produto"><span class="ttl-ico" aria-hidden="true">${TTLIcones.icone('livroAberto', 30)}</span> Sobre este livrinho</h2>
         ${String(produto.descricao || '').split(/\n\n+/).filter(Boolean).map(parte =>
           `<p>${TTLUI.escapo(parte)}</p>`).join('')}
         ${produto.informacoesImpressao ? `
-        <h3 style="font-size: 1.1rem; margin-top: 1.2rem; color: var(--ttl-azul-escuro); display:flex; align-items:center; gap: 0.45rem;">${TTLIcones.icone('impressora', 20)} Informações de impressão</h3>
+        <h3 style="font-size: 1.1rem; margin-top: 1.2rem; color: var(--ttl-azul-escuro); display:flex; align-items:center; gap: 0.45rem;">${TTLIcones.icone('impressora', 26)} Informações de impressão</h3>
         <p>${TTLUI.escapo(produto.informacoesImpressao)}</p>` : ''}
       </div>
     </section>
 
     <section class="ttl-produto-secao" aria-labelledby="titulo-vantagens">
-      <h2 id="titulo-vantagens"><span class="ttl-ico" aria-hidden="true">${TTLIcones.icone('paleta', 22)}</span> Vantagens de levar um livrinho para casa</h2>
+      <h2 id="titulo-vantagens"><span class="ttl-ico" aria-hidden="true">${TTLIcones.icone('paleta', 30)}</span> Vantagens de levar um livrinho para casa</h2>
       <div class="ttl-beneficios-grade">
         ${beneficios.map(b => `
           <div class="ttl-beneficio">
