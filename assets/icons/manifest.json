@@ -694,5 +694,125 @@
     "width": 110,
     "height": 121,
     "source": "Biblioteca complementar — linha 6, coluna 8"
+  },
+  {
+    "name": "carro-brinquedo",
+    "file": "assets/icons/interface/carro-brinquedo.png",
+    "folder": "interface",
+    "width": 294,
+    "height": 236,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "menu",
+    "file": "assets/icons/interface/menu.png",
+    "folder": "interface",
+    "width": 224,
+    "height": 238,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "seta-abaixo",
+    "file": "assets/icons/interface/seta-abaixo.png",
+    "folder": "interface",
+    "width": 225,
+    "height": 237,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "desenhos-folha",
+    "file": "assets/icons/utilitarios/desenhos-folha.png",
+    "folder": "utilitarios",
+    "width": 224,
+    "height": 260,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "idade-balao",
+    "file": "assets/icons/utilitarios/idade-balao.png",
+    "folder": "utilitarios",
+    "width": 281,
+    "height": 264,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "ampliar-lupa",
+    "file": "assets/icons/interface/ampliar-lupa.png",
+    "folder": "interface",
+    "width": 235,
+    "height": 218,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "pix",
+    "file": "assets/icons/beneficios/pix.png",
+    "folder": "beneficios",
+    "width": 214,
+    "height": 213,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "boleto",
+    "file": "assets/icons/beneficios/boleto.png",
+    "folder": "beneficios",
+    "width": 243,
+    "height": 191,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "folha-a4",
+    "file": "assets/icons/beneficios/folha-a4.png",
+    "folder": "beneficios",
+    "width": 178,
+    "height": 231,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "passos-como-funciona",
+    "file": "assets/icons/temas/passos-como-funciona.png",
+    "folder": "temas",
+    "width": 430,
+    "height": 140,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "estrela-avaliacao",
+    "file": "assets/icons/interface/estrela-avaliacao.png",
+    "folder": "interface",
+    "width": 298,
+    "height": 265,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "og-card-whatsapp",
+    "file": "assets/icons/marca/og-card-whatsapp.png",
+    "folder": "marca",
+    "width": 332,
+    "height": 261,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "aniversario-vela",
+    "file": "assets/icons/temas/aniversario-vela.png",
+    "folder": "temas",
+    "width": 227,
+    "height": 258,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "capa-em-breve",
+    "file": "assets/icons/utilitarios/capa-em-breve.png",
+    "folder": "utilitarios",
+    "width": 256,
+    "height": 272,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
+  },
+  {
+    "name": "chama-novidade",
+    "file": "assets/icons/beneficios/chama-novidade.png",
+    "folder": "beneficios",
+    "width": 237,
+    "height": 280,
+    "source": "Cartela nova enviada por  Cartela de Ícones Infantis Encantadores.png"
   }
 ]

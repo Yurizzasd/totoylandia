@@ -47,6 +47,21 @@ const TTLIcones = (() => {
     'interface/presentes.png': [145, 138],
     'interface/voltar-ao-topo.png': [118, 89],
     'interface/seguranca.png': [127, 136],
+    'interface/carro-brinquedo.png': [294, 236],
+    'interface/menu.png': [224, 238],
+    'interface/seta-abaixo.png': [225, 237],
+    'interface/ampliar-lupa.png': [235, 218],
+    'interface/estrela-avaliacao.png': [298, 265],
+    'beneficios/pix.png': [214, 213],
+    'beneficios/boleto.png': [243, 191],
+    'beneficios/folha-a4.png': [178, 231],
+    'beneficios/chama-novidade.png': [237, 280],
+    'temas/passos-como-funciona.png': [430, 140],
+    'temas/aniversario-vela.png': [227, 258],
+    'utilitarios/desenhos-folha.png': [224, 260],
+    'utilitarios/idade-balao.png': [281, 264],
+    'utilitarios/capa-em-breve.png': [256, 272],
+    'marca/og-card-whatsapp.png': [332, 261],
     'beneficios/compra-segura.png': [135, 136],
     'beneficios/entrega-rapida.png': [115, 132],
     'beneficios/imprimir-alternativo.png': [141, 132],
@@ -207,6 +222,23 @@ const TTLIcones = (() => {
     minhaConta:         (sz) => png('redes-e-contato/minha-conta.png', sz),
     endereco:           (sz) => png('redes-e-contato/endereco.png', sz),
 
+    /* ===== cartela nova (adições da marca) ===== */
+
+    carro:              (sz) => png('interface/carro-brinquedo.png', sz),
+    menuPng:            (sz) => png('interface/menu.png', sz),
+    chevronAbaixoPng:   (sz) => png('interface/seta-abaixo.png', sz),
+    ampliarPng:         (sz) => png('interface/ampliar-lupa.png', sz),
+    estrelaAvaliacao:   (sz) => png('interface/estrela-avaliacao.png', sz),
+    pix:                (sz) => png('beneficios/pix.png', sz),
+    boleto:             (sz) => png('beneficios/boleto.png', sz),
+    folhaA4:            (sz) => png('beneficios/folha-a4.png', sz),
+    chamaNovidade:      (sz) => png('beneficios/chama-novidade.png', sz),
+    passosArte:         (sz) => png('temas/passos-como-funciona.png', sz),
+    boloVela:           (sz) => png('temas/aniversario-vela.png', sz),
+    desenhosPng:        (sz) => png('utilitarios/desenhos-folha.png', sz),
+    idadeBalao:         (sz) => png('utilitarios/idade-balao.png', sz),
+    capaEmBreve:        (sz) => png('utilitarios/capa-em-breve.png', sz),
+
     /* ===== sem PNG na biblioteca — linha (chips minúsculos e controles) ===== */
 
     desenhos: (sz) => linha(
@@ -217,9 +249,7 @@ const TTLIcones = (() => {
 
     chama: (sz) => linha('<path d="M12 21c3.9 0 6.5-2.4 6.5-6 0-2.5-1.3-4.6-3.2-6.2-.2 1-.8 1.9-1.7 2.4C13.9 8.9 14 5.4 11 3c.2 2.7-.9 4.5-2.4 6C7 10.6 5.5 12.4 5.5 15c0 3.6 2.6 6 6.5 6z"/>', sz),
 
-    car: (sz) => linha(
-      '<path d="M3 16v-2.1c0-.8.3-1.5.9-2l1-2.8a1.8 1.8 0 0 1 1.7-1.2h7.6c.7 0 1.3.4 1.6 1l1.6 3 2.2.6a2 2 0 0 1 1.4 1.9V16a1.2 1.2 0 0 1-1.2 1.2H4.2A1.2 1.2 0 0 1 3 16z"/>' +
-      '<circle cx="7.4" cy="17.6" r="2"/><circle cx="16.8" cy="17.6" r="2"/>', sz)
+    car: (sz) => png('interface/carro-brinquedo.png', sz)
   };
 
   /* ---------- API pública ---------- */

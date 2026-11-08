@@ -16,11 +16,10 @@
     'animais-fofinhos':    { icone: 'paw',       cor: 'var(--ttl-amarelo)' },
     'dinossauros':         { icone: 'dino',      cor: 'var(--ttl-verde)' },
     'princesas-fantasia':  { icone: 'crown',     cor: 'var(--ttl-rosa)' },
-    'carros-veiculos':     { icone: 'car',       cor: 'var(--ttl-azul)' },
-    'mundo-magico':        { icone: 'arcoiris',  cor: 'var(--ttl-roxo)' },
+    'carros-veiculos':     { icone: 'car',       cor: 'var(--ttl-azul)' },    'mundo-magico':        { icone: 'arcoiris',  cor: 'var(--ttl-roxo)' },
     'espaco-planetas':     { icone: 'foguete',   cor: 'var(--ttl-azul-escuro)' },
     'aprendizado':         { icone: 'formatura', cor: 'var(--ttl-verde-agua)' },
-    'datas-comemorativas': { icone: 'bolo',      cor: 'var(--ttl-laranja)' }
+    'datas-comemorativas': { icone: 'boloVela', cor: 'var(--ttl-laranja)' }
   };
 
   if (gradeColecoes) {

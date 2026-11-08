@@ -13,7 +13,7 @@ const TTL_CONFIG = {
   tamanhoPagina: 9,
 
   // Capa provisória até o cadastro da capa real no catalog.json
-  capaFallback: 'assets/placeholder-capa.svg',
+  capaFallback: 'assets/icons/utilitarios/capa-em-breve.png',
 
   // Chave usada SOMENTE pelo carrinho do cliente (itens escolhidos antes
   // de ir para o checkout da Kiwify). O catálogo NÃO usa localStorage —

@@ -30,7 +30,7 @@ const TTLUI = {
             <span class="ttl-badge ${(qtd > 0) ? 'visivel' : ''}" id="ttl-badge-carrinho">${qtd}</span>
           </button>
           <button class="ttl-menu-btn" id="ttl-btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="ttl-nav-principal">
-            ${TTLIcones.icone('menu', 24)}
+            ${TTLIcones.icone('menuPng', 26)}
           </button>
         </div>
       </div>
@@ -121,6 +121,9 @@ const TTLUI = {
           <p>Os pagamentos são processados pela <strong>Kiwify</strong> com Pix, cartão ou boleto, e os PDFs chegam automaticamente no seu e-mail após a confirmação.</p>
           <p class="ttl-footer-pagamentos">
             <span class="ttl-chip-pagamento">Pagamentos</span>
+            <span class="ttl-pagamentos-icones" aria-hidden="true">
+              ${TTLIcones.icone('cartao', 30)}${TTLIcones.icone('pix', 30)}${TTLIcones.icone('boleto', 30)}
+            </span>
             <span>Kiwify · Pix · Cartão · Boleto</span>
           </p>
         </div>
@@ -309,14 +312,14 @@ const TTLUI = {
     const temLink = TTLProdutos.linkKiwifyValido(produto.linkKiwify);
 
     const selos = [
-      produto.maisVendido ? '<span class="ttl-card-selo">Mais vendido</span>' : '',
+      produto.maisVendido ? `<span class="ttl-card-selo-art">${TTLIcones.icone('estrelaAvaliacao', 72)}</span>` : '',
       temPromo ? '<span class="ttl-card-selo ttl-card-selo-promo">Promoção</span>' : '',
       temLink ? '' : '<span class="ttl-card-selo ttl-card-selo-em-breve">Em breve</span>'
     ].join('');
     const categoria = `<span class="ttl-card-categoria">${TTLUI.escapo(TTLProdutos.categoriaNome(produto.categoria))}</span>`;
 
-    const iconeDesenhos = TTLIcones.icone('desenhos', 13);
-    const iconeIdade = TTLIcones.icone('idade', 13);
+    const iconeDesenhos = TTLIcones.icone('desenhosPng', 16);
+    const iconeIdade = TTLIcones.icone('idadeBalao', 16);
 
     return `
       <article class="ttl-card ${pequeno ? 'ttl-card-pequeno' : ''}" data-id="${TTLUI.escapo(produto.id)}">

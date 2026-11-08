@@ -104,9 +104,9 @@
                width="800" height="1132" fetchpriority="high" decoding="async"
                onerror="this.src='${TTL_CONFIG.capaFallback}'">
           ${temPromo ? `<span class="ttl-selo-promo">-${descontado}%</span>` : ''}
-          ${produto.maisVendido ? '<span class="ttl-selo-topvenda">Mais vendido</span>' : ''}
+          ${produto.maisVendido ? `<span class="ttl-selo-topvenda-art">${TTLIcones.icone('estrelaAvaliacao', 84)}</span>` : ''}
           <span class="ttl-produto-capa-ajuda" aria-hidden="true">
-            ${TTLIcones.icone('ampliar', 12)}
+            ${TTLIcones.icone('ampliarPng', 16)}
             Ampliar
           </span>
         </div>
@@ -128,14 +128,17 @@
 
         <div class="ttl-produto-detalhes">
           <div class="ttl-produto-detalhe">
+            ${TTLIcones.icone('desenhosPng', 26)}
             <strong>${Number(produto.desenhos) > 0 ? Number(produto.desenhos) : '—'}</strong>
             <span>desenhos para pintar</span>
           </div>
           <div class="ttl-produto-detalhe">
+            ${TTLIcones.icone('idadeBalao', 26)}
             <strong>${TTLUI.escapo(produto.faixaEtaria || '—')}</strong>
             <span>idade recomendada</span>
           </div>
           <div class="ttl-produto-detalhe">
+            ${TTLIcones.icone('folhaA4', 26)}
             <strong>PDF</strong>
             <span>formato digital</span>
           </div>
